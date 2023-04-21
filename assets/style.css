@@ -1,0 +1,45 @@
+.section-pic{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    position: relative;
+    border-radius: 0;
+    color: #fafafa;
+    box-shadow: 0 0 8px #111;
+}
+
+.section-pic h1{
+    text-shadow: 2px 2px 5px #222;
+}
+
+.categories-pic{
+    background-image: url('categories.jpg');
+}
+
+.rules-pic{
+    background-image: url('rules.jpg');
+}
+
+.links-pic{
+    background-image: url('links.jpg');
+}
+
+.footer-pic{
+    background-image: url('bottom.jpg');
+    min-height: 180px;
+}
+
+.tunic-item{
+    border-radius: 50%;
+    border: 5px solid #333;
+    position: relative;
+    background-color: #000;
+}
+
+.shadow{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.5) !important;
+}
+
+.shadow-lg{
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.5) !important;
+}

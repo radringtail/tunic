@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:title" content="TUNIC Speedrun Guides">   
+    <meta property="og:description" content="Guides to teach new players how to speedrun TUNIC.">
+    <meta property="og:type" content="website">
+    
+    <title>TUNIC Speedrun Guides</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script>
+        $(function(){ 
+            $("a.external, a[href$='.pdf']").click(function(e){
+                window.open(this.href);
+                e.preventDefault();
+            });
+
+            $("video").click(function(){
+                this.paused?this.play():this.pause();
+            });
+        });
+    </script>
+</head>
+<body>
+    <a href="#content" class="sr-only sr-only-focusable">Skip to Main Content</a>
+    
+    <header class="p-3">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="index.htm" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-light text-decoration-none">
+                    <span class="fs-4">TUNIC Speedrun Guides</span>
+                </a>            
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="index.htm" class="nav-link text-light">Home</a></li>
+                    <li class="nav-item"><a href="index.htm#categories" class="nav-link text-light">Categories</a></li>
+                    <li class="nav-item"><a href="index.htm#rules" class="nav-link text-light">Rulesets</a></li>
+                    <li class="nav-item"><a href="index.htm#links" class="nav-link text-light">Links</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <section class="section-pic d-print-none pt-5 pb-4" style="background-image: url('assets/gun-un/bg.jpg');">
+        <div class="px-4 my-5 text-center">
+            <img class="d-block mx-auto mb-4 tunic-item" src="assets/gun.png" alt="" width="125" height="125">
+            <h1 class="display-5 fw-bold">Gun% (Unrestricted)</h1>
+        </div>
+    </section>
+    
+    <section class="py-5 mb-5">
+        <div class="container" id="content">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="p-3 bg-dark-subtle rounded sticky-top mb-4">
+                        <a href="/" class="pb-3 mb-3 link-light text-decoration-none">
+                            <span class="fs-5 fw-semibold">Guide Outline</span>
+                        </a>
+                        <hr>
+                        <div class="list-group list-group-numbered" id="gun-un">
+                            <a href="#start" class="list-group-item list-group-item-action">Start</a>
+                            <a href="#stick" class="list-group-item list-group-item-action">Get Stick</a>
+                            <a href="#bomb" class="list-group-item list-group-item-action">Use Bomb</a>
+                            <a href="#quarry" class="list-group-item list-group-item-action">To Quarry</a>
+                            <a href="#sniper" class="list-group-item list-group-item-action">Get Sniped</a>
+                            <a href="#gun" class="list-group-item list-group-item-action">Gun</a>
+                        </div>
+                        <hr>
+                        <div class="list-group">
+                            <a href="https://www.speedrun.com/tunic?h=Gun-Unrestricted&x=wdmmojed-6nj5e1el.p120w37l" class="list-group-item list-group-item-action list-group-item-info external">View Leaderboard</a>
+                            <a href="https://www.speedrun.com/tunic/run/new#Gun" class="list-group-item list-group-item-action list-group-item-info external">Submit Run</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9" data-bs-spy="scroll" data-bs-target="#gun-un" data-bs-offset="0">
+                    
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="start">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <h1>Start</h1>
+                                <hr>
+                                <p class="lead">
+                                    Use the "Plushie Code" to start early and get bomb
+                                </p>
+                                <ul>
+                                    <li>As soon as the in-game timer starts, type in the <a href="#" data-bs-toggle="modal" data-bs-target="#bestFriend">Plushie code</a>.</li>
+                                    <li>While the fox shows the plushie, obtain the <a href="#" data-bs-toggle="modal" data-bs-target="#freeFirecracker">free firecracker</a>.</li>
+                                    <li>Leave while the camera is still zooming.</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="ratio ratio-16x9">
+                                    <video src="assets/gun-un/plushie.mp4" preload="none" poster="assets/gun-un/plushie.jpg" class="rounded shadow"></video>   
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="stick">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <h1>Get Stick</h1>
+                                <hr>
+                                <p class="lead">
+                                    Acquire the stick and equip the bomb
+                                </p>
+                                <ul>
+                                    <li>Enter the small house with a mailbox.</li>
+                                    <li>Immediately roll toward and open the chest.</li>
+                                    <li>While opening the chest, equip the Firecracker.</li>
+                                    <li>As soon as the Stick dialog ends, pause, quit, and continue.</li>
+                                    <li>Immediately exit the house.</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="ratio ratio-16x9">
+                                    <video src="assets/gun-un/stick.mp4" preload="none" poster="assets/gun-un/stick.jpg" class="rounded shadow"></video>   
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="bomb">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <h1>Use Bomb</h1>
+                                <hr>
+                                <p class="lead">
+                                    Run west of Overworld Save and throw bomb
+                                </p>
+                                <ul>
+                                    <li>Run up the stairs, being sure to draw the cleanest line.</li>
+                                    <li>Move left of the pillars approaching the save point.</li>
+                                    <li>Cross the bridge and approach the key.</li>
+                                    <li>Throw the bomb at the bushes.</li>
+                                    <li>While waiting for the bomb, equip the Stick.</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="ratio ratio-16x9">
+                                    <video src="assets/gun-un/bomb.mp4" preload="none" poster="assets/gun-un/bomb.jpg" class="rounded shadow"></video>   
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="quarry">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <h1>LS to Quarry</h1>
+                                <hr>
+                                <p class="lead">
+                                    Use Ladder Storage to fly over to Quarry
+                                </p>
+                                <ul>
+                                    <li>Activate <a href="#" data-bs-toggle="modal" data-bs-target="#ladderStorage">Ladder Storage</a> on the now-accessible ladder.</li>
+                                    <li>Run directly left around the closed gate and toward Quarry.</li>
+                                    <li>Run past the fuse and into the Quarry.</li>
+                                    <li>Run past the second fuse and to the save point.</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="ratio ratio-16x9">
+                                    <video src="assets/gun-un/quarry.mp4" preload="none" poster="assets/gun-un/quarry.jpg" class="rounded shadow"></video>   
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="sniper">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <h1>Get Sniped</h1>
+                                <hr>
+                                <p class="lead">
+                                    Use Ladder Storage until a sniper downs you
+                                </p>
+                                <ul>
+                                    <li>Activate <a href="#" data-bs-toggle="modal" data-bs-target="#ladderStorage">Ladder Storage</a> on the ladder behind the save.</li>
+                                    <li>Run directly left and curve around just beside the sniper.</li>
+                                    <li>Continue up-left, past the sniper and towards a chest.</li>
+                                    <li>The sniper should fire and down you just beside another scavenger.</li>
+                                    <li>Run to the left and up to the passage to the shooting range.</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="ratio ratio-16x9">
+                                    <video src="assets/gun-un/sniper.mp4" preload="none" poster="assets/gun-un/sniper.jpg" class="rounded shadow"></video>   
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="gun">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <h1>Acquire Gun</h1>
+                                <hr>
+                                <p class="lead">
+                                    Run around the snipers and open the Gun chest
+                                </p>
+                                <ul>
+                                    <li>As you approach the shooting range, the snipers will aim at you.</li>
+                                    <li>Run in a hemispheric curve around them.</li>
+                                    <li>They should each aim, fire and miss.</li>
+                                    <li>Quickly run to the chest and open it.</li>
+                                    <li>Time stops on the frame the world freezes to display the gun.</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="ratio ratio-16x9">
+                                    <video src="assets/gun-un/gun.mp4" preload="none" poster="assets/gun-un/gun.jpg" class="rounded shadow"></video>   
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>   
+    
+    <section class="section-pic footer-pic d-print-none pt-5 pb-4"></section>
+    
+    <footer class="site-footer d-print-none pt-4 pb-3 bg-dark text-light">
+        <div class="container">
+            <p>
+                &copy; 2023 <a href="https://twitch.tv/radicoon" class="text-light">Radicoon</a>
+                &bull; Built Using <a href="https://getbootstrap.com/docs/5.2/" class="text-light">Bootstrap</a>
+                and <a href="https://fontawesome.com/" class="text-light">Font Awesome</a> <small><i class="fas fa-heart"></i></small>
+            </p>
+        </div>
+    </footer>
+    
+    <!-- LS Modal -->
+    <div class="modal fade" id="ladderStorage" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content text-white">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">
+                        Ladder Storage (LS)<br>
+                        <small>
+                            <span class="badge bg-success">Unrestricted</span>
+                        </small>
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Allows you to ignore any boundaries and gravity.</p>
+                    
+                    <h4>How To LS</h4>
+                    <ol>
+                        <li>Face a ladder so that it is interactable.</li>
+                        <li>Press your interact key and your stick/sword at the same time.</li>
+                        <li>Immediately mash roll (direction + A) while the attack animation is playing.</li>
+                        <li>If done correctly, you'll roll away and be able to walk off edges.</li>
+                    </ol>
+                    
+                    <h4>Important to Know</h4>
+                    <ul>
+                        <li>When you transition to a new scene, you <b>MUST</b> pause, quit, and continue.</li>
+                        <li>If you let go of run at any time, you will snap back to the ladder, UNLESS</li>
+                        <li>You can maintain LS by constanting mashing attack.</li>
+                    </ul>
+                    <div class="alert alert-info">
+                        NOTE: It may be easier to bind your interact and item keys to a single input.
+                        This is allowed and is usually done in Steam's controller settings.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Firecracker Modal -->
+    <div class="modal fade" id="freeFirecracker" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content text-white">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">
+                        Free Firecracker<br>
+                        <small>
+                            <span class="badge bg-success">Unrestricted</span>
+                            <span class="badge bg-primary">NMG</span>
+                            <span class="badge bg-danger">Restricted</span>
+                        </small>
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">One (1) free firecracker per save.</p>
+                    <img src="assets/code-firecracker.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Plushie Modal -->
+    <div class="modal fade" id="bestFriend" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content text-white">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">
+                        Best Friend<br>
+                        <small>
+                            <span class="badge bg-success">Unrestricted</span>
+                            <span class="badge bg-primary">NMG</span>
+                        </small>
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Presents your best friend to the camera. Cancels animations.</p>
+                    <img src="assets/code-plushie.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
