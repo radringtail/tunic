@@ -22,6 +22,10 @@
                 window.open(this.href);
                 e.preventDefault();
             });
+
+            $("#loaded-modals").load("includes/modals.htm");
+            $("#plushie").load("includes/step-plushie.htm");
+            $("#gun").load("includes/step-gun.htm");
         });
     </script>
 </head>
@@ -61,7 +65,7 @@
                         </a>
                         <hr>
                         <div class="list-group list-group-numbered" id="gun-un">
-                            <a href="#start" class="list-group-item list-group-item-action">Start</a>
+                            <a href="#plushie" class="list-group-item list-group-item-action">Start</a>
                             <a href="#stick" class="list-group-item list-group-item-action">Get Stick</a>
                             <a href="#bomb" class="list-group-item list-group-item-action">Use Bomb</a>
                             <a href="#quarry" class="list-group-item list-group-item-action">To Quarry</a>
@@ -77,26 +81,7 @@
                 </div>
                 <div class="col-lg-9" data-bs-spy="scroll" data-bs-target="#gun-un" data-bs-offset="0">
                     
-                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="start">
-                        <div class="row">
-                            <div class="col-lg-7">
-                                <h1>Start</h1>
-                                <hr>
-                                <p class="lead">
-                                    Use the "Plushie Code" to start early and get bomb
-                                </p>
-                                <ul>
-                                    <li>As soon as the in-game timer starts, type in the <a href="#" data-bs-toggle="modal" data-bs-target="#bestFriend">Plushie code</a>.</li>
-                                    <li>While the fox shows the plushie, obtain the <a href="#" data-bs-toggle="modal" data-bs-target="#freeFirecracker">free firecracker</a>.</li>
-                                    <li>Leave while the camera is still zooming.</li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="ratio ratio-16x9">
-                                    <video src="assets/gun-un/plushie.mp4" preload="none" controls poster="assets/gun-un/plushie.jpg" class="rounded shadow"></video>
-                                </div>
-                            </div>
-                        </div>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="plushie">
                     </section>
                     
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="stick">
@@ -195,27 +180,6 @@
                     </section>
                     
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="gun">
-                        <div class="row">
-                            <div class="col-lg-7">
-                                <h1>Acquire Gun</h1>
-                                <hr>
-                                <p class="lead">
-                                    Run around the snipers and open the Gun chest
-                                </p>
-                                <ul>
-                                    <li>As you approach the shooting range, the snipers will aim at you.</li>
-                                    <li>Run in a hemispheric curve around them.</li>
-                                    <li>They should each aim, fire and miss.</li>
-                                    <li>Quickly run to the chest and open it.</li>
-                                    <li>Time stops on the frame the world freezes to display the gun.</li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="ratio ratio-16x9">
-                                    <video src="assets/gun-un/gun.mp4" preload="none" controls poster="assets/gun-un/gun.jpg" class="rounded shadow"></video>   
-                                </div>
-                            </div>
-                        </div>
                     </section>
                 </div>
             </div>
@@ -234,90 +198,6 @@
         </div>
     </footer>
     
-    <!-- LS Modal -->
-    <div class="modal fade" id="ladderStorage" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content text-white">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5">
-                        Ladder Storage (LS)<br>
-                        <small>
-                            <span class="badge bg-success">Unrestricted</span>
-                        </small>
-                    </h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p class="lead">Allows you to ignore any boundaries and gravity.</p>
-                    
-                    <h4>How To LS</h4>
-                    <ol>
-                        <li>Face a ladder so that it is interactable.</li>
-                        <li>Press your interact key and your stick/sword at the same time.</li>
-                        <li>Immediately mash roll (direction + A) while the attack animation is playing.</li>
-                        <li>If done correctly, you'll roll away and be able to walk off edges.</li>
-                    </ol>
-                    
-                    <h4>Important to Know</h4>
-                    <ul>
-                        <li>When you transition to a new scene, you <b>MUST</b> pause, quit, and continue.</li>
-                        <li>If you let go of run at any time, you will snap back to the ladder, UNLESS</li>
-                        <li>You can maintain LS by constantly mashing attack.</li>
-                        <li>If you are damaged during LS, you will fall out of it.</li>
-                    </ul>
-                    <div class="alert alert-info">
-                        NOTE: It may be easier to bind your interact and item keys to a single input.
-                        This is allowed and is usually done in Steam's controller settings.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Firecracker Modal -->
-    <div class="modal fade" id="freeFirecracker" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content text-white">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5">
-                        Free Firecracker<br>
-                        <small>
-                            <span class="badge bg-success">Unrestricted</span>
-                            <span class="badge bg-primary">NMG</span>
-                            <span class="badge bg-danger">Restricted</span>
-                        </small>
-                    </h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p class="lead">One (1) free firecracker per save.</p>
-                    <img src="assets/code-firecracker.png">
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Plushie Modal -->
-    <div class="modal fade" id="bestFriend" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content text-white">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5">
-                        Best Friend<br>
-                        <small>
-                            <span class="badge bg-success">Unrestricted</span>
-                            <span class="badge bg-primary">NMG</span>
-                        </small>
-                    </h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p class="lead">Presents your best friend to the camera. Cancels animations.</p>
-                    <img src="assets/code-plushie.png">
-                </div>
-            </div>
-        </div>
-    </div>
-    
+    <div id="loaded-modals"></div>    
 </body>
 </html>

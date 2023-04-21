@@ -12,18 +12,6 @@
     text-shadow: 2px 2px 5px #222;
 }
 
-.categories-pic{
-    background-image: url('categories.jpg');
-}
-
-.rules-pic{
-    background-image: url('rules.jpg');
-}
-
-.links-pic{
-    background-image: url('links.jpg');
-}
-
 .footer-pic{
     background-image: url('bottom.jpg');
     min-height: 180px;
