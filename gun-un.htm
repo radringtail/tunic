@@ -22,10 +22,6 @@
                 window.open(this.href);
                 e.preventDefault();
             });
-
-            $("video").click(function(){
-                this.paused?this.play():this.pause();
-            });
         });
     </script>
 </head>
@@ -97,7 +93,7 @@
                             </div>
                             <div class="col-lg-5">
                                 <div class="ratio ratio-16x9">
-                                    <video src="assets/gun-un/plushie.mp4" preload="none" poster="assets/gun-un/plushie.jpg" class="rounded shadow"></video>   
+                                    <video src="assets/gun-un/plushie.mp4" preload="none" controls poster="assets/gun-un/plushie.jpg" class="rounded shadow"></video>
                                 </div>
                             </div>
                         </div>
@@ -121,7 +117,7 @@
                             </div>
                             <div class="col-lg-5">
                                 <div class="ratio ratio-16x9">
-                                    <video src="assets/gun-un/stick.mp4" preload="none" poster="assets/gun-un/stick.jpg" class="rounded shadow"></video>   
+                                    <video src="assets/gun-un/stick.mp4" preload="none" controls poster="assets/gun-un/stick.jpg" class="rounded shadow"></video>   
                                 </div>
                             </div>
                         </div>
@@ -145,7 +141,7 @@
                             </div>
                             <div class="col-lg-5">
                                 <div class="ratio ratio-16x9">
-                                    <video src="assets/gun-un/bomb.mp4" preload="none" poster="assets/gun-un/bomb.jpg" class="rounded shadow"></video>   
+                                    <video src="assets/gun-un/bomb.mp4" preload="none" controls poster="assets/gun-un/bomb.jpg" class="rounded shadow"></video>   
                                 </div>
                             </div>
                         </div>
@@ -168,7 +164,7 @@
                             </div>
                             <div class="col-lg-5">
                                 <div class="ratio ratio-16x9">
-                                    <video src="assets/gun-un/quarry.mp4" preload="none" poster="assets/gun-un/quarry.jpg" class="rounded shadow"></video>   
+                                    <video src="assets/gun-un/quarry.mp4" preload="none" controls poster="assets/gun-un/quarry.jpg" class="rounded shadow"></video>   
                                 </div>
                             </div>
                         </div>
@@ -192,7 +188,7 @@
                             </div>
                             <div class="col-lg-5">
                                 <div class="ratio ratio-16x9">
-                                    <video src="assets/gun-un/sniper.mp4" preload="none" poster="assets/gun-un/sniper.jpg" class="rounded shadow"></video>   
+                                    <video src="assets/gun-un/sniper.mp4" preload="none" controls poster="assets/gun-un/sniper.jpg" class="rounded shadow"></video>   
                                 </div>
                             </div>
                         </div>
@@ -216,7 +212,7 @@
                             </div>
                             <div class="col-lg-5">
                                 <div class="ratio ratio-16x9">
-                                    <video src="assets/gun-un/gun.mp4" preload="none" poster="assets/gun-un/gun.jpg" class="rounded shadow"></video>   
+                                    <video src="assets/gun-un/gun.mp4" preload="none" controls poster="assets/gun-un/gun.jpg" class="rounded shadow"></video>   
                                 </div>
                             </div>
                         </div>
@@ -266,7 +262,8 @@
                     <ul>
                         <li>When you transition to a new scene, you <b>MUST</b> pause, quit, and continue.</li>
                         <li>If you let go of run at any time, you will snap back to the ladder, UNLESS</li>
-                        <li>You can maintain LS by constanting mashing attack.</li>
+                        <li>You can maintain LS by constantly mashing attack.</li>
+                        <li>If you are damaged during LS, you will fall out of it.</li>
                     </ul>
                     <div class="alert alert-info">
                         NOTE: It may be easier to bind your interact and item keys to a single input.
