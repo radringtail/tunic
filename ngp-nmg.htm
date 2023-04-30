@@ -31,6 +31,7 @@
             $("#elevator-skip").load("includes/step-elevator-skip.htm");
             $("#upper-zigg").load("includes/step-zigg-fairies.htm");
             $("#kevin-skip").load("includes/step-kevin-clip.htm");
+            $("#lower-zigg").load("includes/step-zigg-lower.htm");
             $("#admins-skip").load("includes/step-double-admin-skip.htm");
             $("#scav").load("includes/step-scav-quick-kill.htm");
             $("#first-death").load("includes/step-resurrection.htm");
@@ -73,7 +74,7 @@
         </div>
     </header>
     
-    <section class="section-pic d-print-none pt-5 pb-4" style="background-image: url('assets/gun-un/bg.jpg');">
+    <section class="section-pic d-print-none pt-5 pb-4" style="background-image: url('assets/ngp-nmg/bg.jpg');">
         <div class="px-4 my-5 text-center">
             <img class="d-block mx-auto mb-4 tunic-item" src="assets/lantern.png" alt="" width="125" height="125">
             <h1 class="display-4 fw-bold">New Game+</h1>
@@ -102,6 +103,7 @@
                                     <a href="#upper-zigg" class="list-group-item list-group-item-action">Upper Ziggurat</a>
                                     <a href="#admin-skip" class="list-group-item list-group-item-action">Admin Skip</a>
                                     <a href="#kevin-skip" class="list-group-item list-group-item-action">Kevin Skip</a>
+                                    <a href="#lower-zigg" class="list-group-item list-group-item-action">Lower Ziggurat</a>
                                     <a href="#admins-skip" class="list-group-item list-group-item-action">2X Admin Skip</a>
                                     <a href="#scav" class="list-group-item list-group-item-action">Boss: Scavenger</a>
                                     <a href="#first-death" class="list-group-item list-group-item-action">Resurrection</a>
@@ -261,6 +263,7 @@
                             </div>
                         </section>
                         
+                        <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="lower-zigg"></section>
                         <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="admins-skip"></section>
                         
                         <section class="text-light bg-primary-subtle mb-4 p-3 rounded text-center">
@@ -290,17 +293,74 @@
                         <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="first-death"></section>
 
                         <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="atoll"></section>
+
+                        <section class="text-light bg-primary-subtle mb-4 p-3 rounded text-center">
+                            <div class="fs-4 font-monospace mb-3">
+                                Desired Equip State
+                            </div>
+                            <div>
+                                <img class="d-inline tunic-item" src="assets/orb.png" alt="orb" width="100" height="100">
+                                <img class="d-inline tunic-item" src="assets/dagger.png" alt="dagger" width="100" height="100">
+                                <img class="d-inline tunic-item" src="assets/wand.png" alt="wand" width="100" height="100">
+                            </div>
+                        </section>
+
                         <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="fuses12"></section>
                         <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="fuses34"></section>
                         <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="library"></section>
+
+                        <section class="text-light bg-primary-subtle mb-4 p-3 rounded text-center">
+                            <div class="fs-4 font-monospace mb-3">
+                                Desired Equip State
+                            </div>
+                            <div>
+                                <img class="d-inline tunic-item" src="assets/sword.png" alt="sword" width="100" height="100">
+                                <img class="d-inline tunic-item" src="assets/dagger.png" alt="dagger" width="100" height="100">
+                                <img class="d-inline tunic-item" src="assets/wand.png" alt="wand" width="100" height="100">
+                            </div>
+                        </section>
+
                         <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="librarian"></section>
 
-                        <hr>
+                        <section class="text-light bg-primary-subtle mb-4 p-3 rounded text-center">
+                            <div class="fs-4 font-monospace mb-3">
+                                Desired Equip State
+                            </div>
+                            <div>
+                                <img class="d-inline tunic-item" src="assets/orb.png" alt="orb" width="100" height="100">
+                                <img class="d-inline tunic-item" src="assets/dagger.png" alt="dagger" width="100" height="100">
+                                <img class="d-inline tunic-item" src="assets/wand.png" alt="wand" width="100" height="100">
+                            </div>
+                        </section>
 
                         <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="fortress"></section>
                         <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="outside"></section>
                         <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="doorclip"></section>
+
+                        <section class="text-light bg-primary-subtle mb-4 p-3 rounded text-center">
+                            <div class="fs-4 font-monospace mb-3">
+                                Desired Equip State
+                            </div>
+                            <div>
+                                <img class="d-inline tunic-item" src="assets/sword.png" alt="sword" width="100" height="100">
+                                <img class="d-inline tunic-item" src="assets/dagger.png" alt="dagger" width="100" height="100">
+                                <img class="d-inline tunic-item" src="assets/wand.png" alt="wand" width="100" height="100">
+                            </div>
+                        </section>
+
                         <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="siege"></section>
+
+                        <section class="text-light bg-primary-subtle mb-4 p-3 rounded text-center">
+                            <div class="fs-4 font-monospace mb-3">
+                                Desired Equip State
+                            </div>
+                            <div>
+                                <img class="d-inline tunic-item" src="assets/fire-bomb.png" alt="fire-bomb" width="100" height="100">
+                                <img class="d-inline tunic-item" src="assets/dagger.png" alt="dagger" width="100" height="100">
+                                <img class="d-inline tunic-item" src="assets/wand.png" alt="wand" width="100" height="100">
+                            </div>
+                        </section>
+
                         <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="redkey"></section>
 
                         <section class="text-light bg-primary-subtle mb-4 p-3 rounded text-center">
