@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:title" content="New Game+ (No Major Glitches)">   
+    <meta property="og:description" content="Guides to teach new players how to speedrun TUNIC.">
+    <meta property="og:type" content="website">
+    
+    <title>Any% (Restricted) | TUNIC Speedrun Guides</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script>
+        $(function(){ 
+            $("a.external, a[href$='.pdf']").click(function(e){
+                window.open(this.href);
+                e.preventDefault();
+            });
+            
+            $("#loaded-modals").load("includes/modals.htm");
+            
+            // load re-usable modules
+            $("#irc-start").load("includes/step-irc-start.htm");
+        });
+    </script>
+</head>
+<body>
+    <a href="#content" class="sr-only sr-only-focusable">Skip to Main Content</a>
+    
+    <header class="py-2">
+        <div class="container">
+            <nav class="navbar navbar-expand-md">
+                <div class="container-fluid">
+                    <a class="navbar-brand fs-4" href="index.htm">TUNIC Speedrun Guides</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="main-nav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="index.htm" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="index.htm#categories" class="nav-link">Categories</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="index.htm#rules" class="nav-link">Rulesets</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="index.htm#links" class="nav-link">Links</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="section-pic d-print-none pt-5 pb-4" style="background-image: url('assets/any-restr/bg.jpg');">
+        <div class="px-4 my-5 text-center">
+            <img class="d-block mx-auto mb-4 tunic-item" src="assets/sword.png" alt="sword" width="125" height="125">
+            <h1 class="display-4 fw-bold">Any%</h1>
+            <h2 class="display-5">Restricted</h2>
+        </div>
+    </section>
+    
+    <section class="py-5 mb-5">
+        <div class="container" id="content">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="p-3 bg-dark-subtle rounded sticky-top overflow-y-scroll mb-4 guide-menu">
+                        <a href="/" class="pb-3 mb-3 link-light text-decoration-none">
+                            <span class="fs-5 fw-semibold">Any% (Restricted)</span>
+                        </a>
+                        <hr>
+                        <div id="sidebar-menu">
+                            <div class="h5 text-light">
+                                Frog's Domain
+                            </div>
+                            <ol class="list-group list-group-numbered mb-3 small">
+                                <a href="#bombs-start" class="list-group-item list-group-item-action">Bombs Start</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">Warp to Atoll</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">Frog's Domain</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">NE/SE Fuses</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">Resurrection</a>
+                            </ol> 
+
+                            <div class="h5 text-light">
+                                East Forest, Fortress
+                            </div>
+                            <ol class="list-group list-group-numbered mb-3 small">
+                                <a href="#temp" class="list-group-item list-group-item-action">Shortcut</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">Glass Cannon</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">East Forest</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">Guard Captain</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">Eastern Bell</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">Outside Fortress</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">Beneath the Earth</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">Inside Fortress</a>
+                            </ol> 
+
+                            <div class="h5 text-light">
+                                Dark Tomb, West Garden
+                            </div>
+                            <ol class="list-group list-group-numbered mb-3 small">
+                                <a href="#temp" class="list-group-item list-group-item-action">Peppers and Wand</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">Orange Peril Ring</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">Dark Tomb</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">West Garden Run</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">Ice Dagger</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">Garden Knight</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">Western Bell</a>
+                            </ol> 
+
+                            <div class="h5 text-light">
+                                Quarry, Ziggurat
+                            </div>
+                            <ol class="list-group list-group-numbered mb-3 small">
+                                <a href="#temp" class="list-group-item list-group-item-action">To Quarry</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">Upgrade ATT</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">Quarry Run</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">Upper Ziggurat</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">Administrator</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">Tower and Elevator</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">Lower Ziggurat</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">Double Admin Skip</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">Boss: Scavenger</a>
+                            </ol> 
+
+                            <div class="h5 text-light">
+                                Siege, Atoll, Library, Hier
+                            </div>
+                            <ol class="list-group list-group-numbered mb-3 small">
+                                <a href="#temp" class="list-group-item list-group-item-action">Damage Down</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">Boss: Siege</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">Warp to Atoll</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">SE/SW Fuses</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">Enter Library</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">Boss: Librarian</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">Warp to Temple</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">Place Keys</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">Heir Skip</a>
+                            </ol> 
+
+                            <div class="h5 text-light">
+                                Swamp, Cathedral, Gauntlet
+                            </div>
+                            <ol class="list-group list-group-numbered mb-3 small">
+                                <a href="#temp" class="list-group-item list-group-item-action">To Swamp</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">Swamp Run</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">Cathedral</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">Gauntlet</a>
+                            </ol> 
+
+                            <div class="h5 text-light">
+                                Hero's Relics, Heir
+                            </div>
+                            <ol class="list-group list-group-numbered mb-3 small">
+                                <a href="#temp" class="list-group-item list-group-item-action">SP Relic (Swamp)</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">DEF Relic (West Garden)</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">HP Relic (Forest Fortress)</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">ATT Relic (East Forest)</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">MP Relic (Library)</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">Potion Relic (Quarry)</a>
+                                <a href="#temp" class="list-group-item list-group-item-action">Boss: Heir</a>
+                            </ol> 
+
+                            <hr>
+
+                            <div class="list-group">
+                                <a href="https://www.speedrun.com/tunic?h=Any-Restricted&x=z27v96z2-6nj5e1el.810kddoq" class="list-group-item list-group-item-action list-group-item-info external">View Leaderboard</a>
+                                <a href="https://www.speedrun.com/tunic/run/new#Any" class="list-group-item list-group-item-action list-group-item-info external">Submit Run</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9" data-bs-spy="scroll" data-bs-target="#sidebar-menu" data-bs-offset="0">                        
+                    <section class="p-5 mb-4 rounded bg-secondary-subtle">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p class="lead text-white">
+                                    TBD
+                                </p>
+                            </div>
+                            <div class="col-md-8">
+                                <p>
+                                    TBD
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="irc-start"></section>
+                    
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="quarry">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <h1>Enter Quarry</h1>
+                                <hr>
+                                <p class="lead">
+                                    Use ice-grapples to quickly head over to Quarry
+                                </p>
+                                <ul>
+                                    <li>Head west to the key and use the wand to zap the bushes.</li>
+                                    <li>Walk behind the windmill and <a href="#" data-bs-toggle="modal" data-bs-target="#ice-grapple">ice-grapple</a> the nearest rudeling.</li>
+                                    <li>Head west and grapple down to the fork behind the Envoy.</li>
+                                    <li>Head up the ladder, into the Forbidden Pass and power the first fuse.</li>
+                                    <li>Head into Quarry and power the second fuse.</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="ratio ratio-16x9">
+                                    <video src="assets/ngp-nmg/quarry.mp4" preload="none" controls poster="assets/ngp-nmg/quarry.jpg" class="rounded shadow"></video>   
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section class="text-light bg-primary-subtle mb-4 p-3 rounded text-center">
+                        <div>
+                            <img class="d-inline tunic-item" src="assets/effigy.png" alt="effigy" width="100" height="100">
+                            <img class="d-inline tunic-item" src="assets/dagger.png" alt="dagger" width="100" height="100">
+                            <img class="d-inline tunic-item" src="assets/wand.png" alt="wand" width="100" height="100">
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>   
+    
+    <section class="section-pic footer-pic d-print-none pt-5 pb-4"></section>
+    
+    <footer class="site-footer d-print-none pt-4 pb-3 bg-dark text-light">
+        <div class="container">
+            <p>
+                &copy; 2023 <a href="https://twitch.tv/radicoon" class="text-light">Radicoon</a>
+                &bull; Built Using <a href="https://getbootstrap.com/docs/5.2/" class="text-light">Bootstrap</a>
+                and <a href="https://fontawesome.com/" class="text-light">Font Awesome</a> <small><i class="fas fa-heart"></i></small>
+            </p>
+        </div>
+    </footer>
+    
+    <div id="loaded-modals"></div>    
+</body>
+</html>
