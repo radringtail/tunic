@@ -26,7 +26,46 @@
             $("#loaded-modals").load("includes/modals.htm");
             
             // load re-usable modules
-            $("#irc-start").load("includes/step-irc-start.htm");
+            $("#bombs-start").load("includes/step-overworld-bomb-start.htm");
+            $("#atoll").load("includes/step-overworld-bomb-atoll.htm");
+            $("#to-fd").load("includes/step-atoll-frogs.htm");
+            $("#frogs-domain").load("includes/step-frogs-domain-restr.htm");
+            $("#fuses12").load("includes/step-atoll-fuse12-restr.htm");
+            $("#first-death").load("includes/step-resurrection.htm");
+
+            $("#glass-cannon").load("includes/step-overworld-glass-cannon-restr.htm");
+            $("#east-forest").load("includes/step-east-forest.htm");
+            $("#guard-captain").load("includes/step-guard-captain.htm");
+            $("#eastern-bell").load("includes/step-eastern-bell.htm");
+            $("#fortress-outside").load("includes/step-fortress-outside-restr.htm");
+            $("#dark-cave").load("includes/step-beneath-the-earth.htm");
+            $("#fortress-inside").load("includes/step-fortress-inside-restr.htm");
+
+            $("#wand").load("includes/step-overworld-peppers-wand.htm");
+            $("#rtsr").load("includes/step-rtsr.htm");
+            $("#dark-tomb").load("includes/step-dark-tomb-restr.htm");
+            $("#west-garden").load("includes/step-west-garden-restr.htm");
+            $("#dagger").load("includes/step-west-garden-dagger-restr.htm");
+            $("#garden-knight").load("includes/step-garden-knight.htm");
+            $("#dong").load("includes/step-western-bell.htm");
+
+            $("#upgrade-att4").load("includes/step-quarry-upgrade.htm");
+            $("#quarry").load("includes/step-quarry-restr.htm");
+            $("#ziggurat-upper").load("includes/step-zigg-fairies.htm");
+            $("#tower").load("includes/step-zigg-tower.htm");
+            $("#ziggurat-lower").load("includes/step-zigg-lower-bombs.htm");
+            $("#admins-skip").load("includes/step-zigg-2x-admin-dagger.htm");
+            $("#scavenger").load("includes/step-scav-fight.htm");
+
+            $("#siege-damage").load("includes/step-quarry-siege-damage.htm");
+            $("#siege").load("includes/step-siege-quick.htm");
+            $("#atoll2").load("includes/step-redkey-warp.htm");
+            $("#fuses34").load("includes/step-atoll-fuse34-restr.htm");
+            $("#library").load("includes/step-atoll-library.htm");
+            $("#librarian").load("includes/step-librarian-fight.htm");
+
+            $("#temple").load("includes/step-overworld-temple-restr.htm");
+            $("#heir").load("includes/step-heir-fight-restr.htm");
         });
     </script>
 </head>
@@ -85,78 +124,74 @@
                             </div>
                             <ol class="list-group list-group-numbered mb-3 small">
                                 <a href="#bombs-start" class="list-group-item list-group-item-action">Bombs Start</a>
-                                <a href="#temp" class="list-group-item list-group-item-action">Warp to Atoll</a>
-                                <a href="#temp" class="list-group-item list-group-item-action">Frog's Domain</a>
-                                <a href="#temp" class="list-group-item list-group-item-action">NE/SE Fuses</a>
-                                <a href="#temp" class="list-group-item list-group-item-action">Resurrection</a>
+                                <a href="#atoll" class="list-group-item list-group-item-action">Sneak to Atoll</a>
+                                <a href="#to-fd" class="list-group-item list-group-item-action">To Frog's Domain</a>
+                                <a href="#frogs-domain" class="list-group-item list-group-item-action">Frog's Domain</a>
+                                <a href="#fuses12" class="list-group-item list-group-item-action">NE/SE Fuses</a>
+                                <a href="#first-death" class="list-group-item list-group-item-action">Resurrection</a>
                             </ol> 
-
+                            
                             <div class="h5 text-light">
                                 East Forest, Fortress
                             </div>
                             <ol class="list-group list-group-numbered mb-3 small">
-                                <a href="#temp" class="list-group-item list-group-item-action">Shortcut</a>
-                                <a href="#temp" class="list-group-item list-group-item-action">Glass Cannon</a>
-                                <a href="#temp" class="list-group-item list-group-item-action">East Forest</a>
-                                <a href="#temp" class="list-group-item list-group-item-action">Guard Captain</a>
-                                <a href="#temp" class="list-group-item list-group-item-action">Eastern Bell</a>
-                                <a href="#temp" class="list-group-item list-group-item-action">Outside Fortress</a>
-                                <a href="#temp" class="list-group-item list-group-item-action">Beneath the Earth</a>
-                                <a href="#temp" class="list-group-item list-group-item-action">Inside Fortress</a>
+                                <a href="#glass-cannon" class="list-group-item list-group-item-action">Glass Cannon</a>
+                                <a href="#east-forest" class="list-group-item list-group-item-action">East Forest</a>
+                                <a href="#guard-captain" class="list-group-item list-group-item-action">Guard Captain</a>
+                                <a href="#eastern-bell" class="list-group-item list-group-item-action">Eastern Bell</a>
+                                <a href="#fortress-outside" class="list-group-item list-group-item-action">Outside Fortress</a>
+                                <a href="#dark-cave" class="list-group-item list-group-item-action">Beneath the Earth</a>
+                                <a href="#fortress-inside" class="list-group-item list-group-item-action">Inside Fortress</a>
                             </ol> 
-
+                            
                             <div class="h5 text-light">
                                 Dark Tomb, West Garden
                             </div>
                             <ol class="list-group list-group-numbered mb-3 small">
-                                <a href="#temp" class="list-group-item list-group-item-action">Peppers and Wand</a>
-                                <a href="#temp" class="list-group-item list-group-item-action">Orange Peril Ring</a>
-                                <a href="#temp" class="list-group-item list-group-item-action">Dark Tomb</a>
-                                <a href="#temp" class="list-group-item list-group-item-action">West Garden Run</a>
-                                <a href="#temp" class="list-group-item list-group-item-action">Ice Dagger</a>
-                                <a href="#temp" class="list-group-item list-group-item-action">Garden Knight</a>
-                                <a href="#temp" class="list-group-item list-group-item-action">Western Bell</a>
+                                <a href="#wand" class="list-group-item list-group-item-action">Peppers and Wand</a>
+                                <a href="#rtsr" class="list-group-item list-group-item-action">Orange Peril Ring</a>
+                                <a href="#dark-tomb" class="list-group-item list-group-item-action">Dark Tomb</a>
+                                <a href="#west-garden" class="list-group-item list-group-item-action">West Garden Run</a>
+                                <a href="#dagger" class="list-group-item list-group-item-action">Ice Dagger</a>
+                                <a href="#garden-knight" class="list-group-item list-group-item-action">Garden Knight</a>
+                                <a href="#dong" class="list-group-item list-group-item-action">Western Bell</a>
                             </ol> 
-
+                            
                             <div class="h5 text-light">
                                 Quarry, Ziggurat
                             </div>
                             <ol class="list-group list-group-numbered mb-3 small">
-                                <a href="#temp" class="list-group-item list-group-item-action">To Quarry</a>
-                                <a href="#temp" class="list-group-item list-group-item-action">Upgrade ATT</a>
-                                <a href="#temp" class="list-group-item list-group-item-action">Quarry Run</a>
-                                <a href="#temp" class="list-group-item list-group-item-action">Upper Ziggurat</a>
-                                <a href="#temp" class="list-group-item list-group-item-action">Administrator</a>
-                                <a href="#temp" class="list-group-item list-group-item-action">Tower and Elevator</a>
-                                <a href="#temp" class="list-group-item list-group-item-action">Lower Ziggurat</a>
-                                <a href="#temp" class="list-group-item list-group-item-action">Double Admin Skip</a>
-                                <a href="#temp" class="list-group-item list-group-item-action">Boss: Scavenger</a>
+                                <a href="#upgrade-att4" class="list-group-item list-group-item-action">Upgrade ATT</a>
+                                <a href="#quarry" class="list-group-item list-group-item-action">Quarry Run</a>
+                                <a href="#ziggurat-upper" class="list-group-item list-group-item-action">Upper Ziggurat</a>
+                                <a href="#tower" class="list-group-item list-group-item-action">Tower and Elevator</a>
+                                <a href="#ziggurat-lower" class="list-group-item list-group-item-action">Lower Ziggurat</a>
+                                <a href="#admins-skip" class="list-group-item list-group-item-action">2X Admin Skip</a>
+                                <a href="#scavenger" class="list-group-item list-group-item-action">Boss: Scavenger</a>
                             </ol> 
-
+                            
                             <div class="h5 text-light">
                                 Siege, Atoll, Library, Hier
                             </div>
                             <ol class="list-group list-group-numbered mb-3 small">
-                                <a href="#temp" class="list-group-item list-group-item-action">Damage Down</a>
-                                <a href="#temp" class="list-group-item list-group-item-action">Boss: Siege</a>
-                                <a href="#temp" class="list-group-item list-group-item-action">Warp to Atoll</a>
-                                <a href="#temp" class="list-group-item list-group-item-action">SE/SW Fuses</a>
-                                <a href="#temp" class="list-group-item list-group-item-action">Enter Library</a>
-                                <a href="#temp" class="list-group-item list-group-item-action">Boss: Librarian</a>
+                                <a href="#siege-damage" class="list-group-item list-group-item-action">Damage Down</a>
+                                <a href="#siege" class="list-group-item list-group-item-action">Boss: Siege</a>
+                                <a href="#atoll2" class="list-group-item list-group-item-action">Warp to Atoll</a>
+                                <a href="#fuses34" class="list-group-item list-group-item-action">NW/SW Fuses</a>
+                                <a href="#library" class="list-group-item list-group-item-action">Enter Library</a>
+                                <a href="#librarian" class="list-group-item list-group-item-action">Boss: Librarian</a>
                             </ol> 
-
+                            
                             <div class="h5 text-light">
                                 Ending
                             </div>
                             <ol class="list-group list-group-numbered mb-3 small">
-                                <a href="#temp" class="list-group-item list-group-item-action">Boss: Librarian</a>
-                                <a href="#temp" class="list-group-item list-group-item-action">Warp to Temple</a>
-                                <a href="#temp" class="list-group-item list-group-item-action">Place Keys</a>
-                                <a href="#temp" class="list-group-item list-group-item-action">Boss: Heir</a>
+                                <a href="#temple" class="list-group-item list-group-item-action">Place Keys</a>
+                                <a href="#heir" class="list-group-item list-group-item-action">Boss: Heir</a>
                             </ol> 
-
+                            
                             <hr>
-
+                            
                             <div class="list-group">
                                 <a href="https://www.speedrun.com/tunic?h=Any-Restricted&x=z27v96z2-6nj5e1el.810kddoq" class="list-group-item list-group-item-action list-group-item-info external">View Leaderboard</a>
                                 <a href="https://www.speedrun.com/tunic/run/new#Any" class="list-group-item list-group-item-action list-group-item-info external">Submit Run</a>
@@ -180,39 +215,178 @@
                         </div>
                     </section>
                     
-                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="irc-start"></section>
-                    
-                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="quarry">
-                        <div class="row">
-                            <div class="col-lg-7">
-                                <h1>Enter Quarry</h1>
-                                <hr>
-                                <p class="lead">
-                                    Use ice-grapples to quickly head over to Quarry
-                                </p>
-                                <ul>
-                                    <li>Head west to the key and use the wand to zap the bushes.</li>
-                                    <li>Walk behind the windmill and <a href="#" data-bs-toggle="modal" data-bs-target="#ice-grapple">ice-grapple</a> the nearest rudeling.</li>
-                                    <li>Head west and grapple down to the fork behind the Envoy.</li>
-                                    <li>Head up the ladder, into the Forbidden Pass and power the first fuse.</li>
-                                    <li>Head into Quarry and power the second fuse.</li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="ratio ratio-16x9">
-                                    <video src="assets/ngp-nmg/quarry.mp4" preload="none" controls poster="assets/ngp-nmg/quarry.jpg" class="rounded shadow"></video>   
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="bombs-start"></section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="atoll"></section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="to-fd"></section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="frogs-domain"></section>
+
                     <section class="text-light bg-primary-subtle mb-4 p-3 rounded text-center">
                         <div>
-                            <img class="d-inline tunic-item" src="assets/effigy.png" alt="effigy" width="100" height="100">
-                            <img class="d-inline tunic-item" src="assets/dagger.png" alt="dagger" width="100" height="100">
-                            <img class="d-inline tunic-item" src="assets/wand.png" alt="wand" width="100" height="100">
+                            <img class="d-inline tunic-item" src="assets/orb.png" alt="orb">
+                            <img class="d-inline tunic-item" src="assets/bomb.png" alt="bomb">
                         </div>
                     </section>
+
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="fuses12"></section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="first-death"></section>
+                    
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="glass-cannon"></section>
+
+                    <section class="text-light bg-primary-subtle mb-4 p-3 rounded text-center">
+                        <div>
+                            <img class="d-inline tunic-item" src="assets/orb.png" alt="orb">
+                            <img class="d-inline tunic-item" src="assets/bomb.png" alt="bomb">
+                            <img class="d-inline tunic-item" src="assets/stick.png" alt="stick">
+                            <img class="d-inline tunic-card" src="assets/glass.jpg" alt="glass cannon">
+                        </div>
+                    </section>
+
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="east-forest"></section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="guard-captain"></section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="eastern-bell"></section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="fortress-outside"></section>
+
+                    <section class="text-light bg-primary-subtle mb-4 p-3 rounded text-center">
+                        <div>
+                            <img class="d-inline tunic-item" src="assets/orb.png" alt="orb">
+                            <img class="d-inline tunic-item" src="assets/ice-bomb.png" alt="ice bomb">
+                            <img class="d-inline tunic-item" src="assets/lure.png" alt="lure">
+                        </div>
+                    </section>
+
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="dark-cave"></section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="fortress-inside"></section>
+
+                    <section class="text-light bg-primary-subtle mb-4 p-3 rounded text-center">
+                        <div>
+                            <img class="d-inline tunic-item" src="assets/orb.png" alt="orb">
+                            <img class="d-inline tunic-item" src="assets/bomb.png" alt="bomb">
+                            <img class="d-inline tunic-item" src="assets/stick.png" alt="stick">
+                        </div>
+                    </section>
+
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="wand"></section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="rtsr"></section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="dark-tomb"></section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="west-garden"></section>
+
+                    <section class="text-light bg-primary-subtle mb-4 p-3 rounded text-center">
+                        <div>
+                            <img class="d-inline tunic-card" src="assets/glass.jpg" alt="glass cannon">
+                        </div>
+                    </section>
+
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="dagger"></section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="garden-knight"></section>
+
+                    <section class="text-light bg-primary-subtle mb-4 p-3 rounded text-center">
+                        <div>
+                            <img class="d-inline tunic-item" src="assets/orb.png" alt="orb">
+                            <img class="d-inline tunic-item" src="assets/bomb.png" alt="bomb">
+                            <img class="d-inline tunic-item" src="assets/wand.png" alt="wand">
+                        </div>
+                    </section>
+
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="dong"></section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="upgrade-att4"></section>
+
+                    <section class="text-light bg-primary-subtle mb-4 p-3 rounded text-center">
+                        <div>
+                            <img class="d-inline tunic-item" src="assets/orb.png" alt="orb">
+                            <img class="d-inline tunic-card" src="assets/muffling.jpg" alt="muffling bell">
+                        </div>
+                    </section>
+
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="quarry"></section>
+
+                    <section class="text-light bg-primary-subtle mb-4 p-3 rounded text-center">
+                        <div>
+                            <img class="d-inline tunic-item" src="assets/sword.png" alt="sword">
+                            <img class="d-inline tunic-item" src="assets/dagger.png" alt="dagger">
+                            <img class="d-inline tunic-item" src="assets/wand.png" alt="wand">
+                            <img class="d-inline tunic-card" src="assets/rtsr.jpg" alt="orange peril ring">
+                        </div>
+                    </section>
+
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="ziggurat-upper"></section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="tower"></section>
+
+                    <section class="text-light bg-primary-subtle mb-4 p-3 rounded text-center">
+                        <div>
+                            <img class="d-inline tunic-item" src="assets/pepper.png" alt="hot pepper">
+                            <img class="d-inline tunic-item" src="assets/dagger.png" alt="dagger">
+                            <img class="d-inline tunic-item" src="assets/mana-berry.png" alt="mana-berry">
+                        </div>
+                    </section>
+
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="ziggurat-lower"></section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="admins-skip"></section>
+
+                    <div class="alert alert-danger mb-4">
+                        Be sure to eat a couple <b>mana berries</b> during the Admins Skip section. You need <b>full MP</b>.
+                    </div>
+
+                    <section class="text-light bg-primary-subtle mb-4 p-3 rounded text-center">
+                        <div>
+                            <img class="d-inline tunic-item" src="assets/pepper.png" alt="hot pepper">
+                            <img class="d-inline tunic-item" src="assets/dagger.png" alt="dagger">
+                            <img class="d-inline tunic-item" src="assets/wand.png" alt="wand">
+                        </div>
+                    </section>
+
+                    <div class="alert alert-danger mb-4">
+                        Be sure to use the <b>pepper</b> just before the next section.
+                    </div>
+
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="scavenger"></section>
+
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="siege-damage"></section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="siege"></section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="atoll2"></section>
+
+                    <section class="text-light bg-primary-subtle mb-4 p-3 rounded text-center">
+                        <div>
+                            <img class="d-inline tunic-item" src="assets/orb.png" alt="orb">
+                            <img class="d-inline tunic-item" src="assets/dagger.png" alt="dagger">
+                            <img class="d-inline tunic-item" src="assets/wand.png" alt="wand">
+                            <img class="d-inline tunic-card" src="assets/muffling.jpg" alt="muffling bell">
+                        </div>
+                    </section>
+
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="fuses34"></section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="library"></section>
+
+                    <section class="text-light bg-primary-subtle mb-4 p-3 rounded text-center">
+                        <div>
+                            <img class="d-inline tunic-item" src="assets/sword.png" alt="sword">
+                            <img class="d-inline tunic-item" src="assets/dagger.png" alt="dagger">
+                            <img class="d-inline tunic-item" src="assets/wand.png" alt="wand">
+                            <img class="d-inline tunic-card" src="assets/rtsr.jpg" alt="orange peril ring">
+                        </div>
+                    </section>
+
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="librarian"></section>
+
+                    <section class="text-light bg-primary-subtle mb-4 p-3 rounded text-center">
+                        <div>
+                            <img class="d-inline tunic-item" src="assets/bomb.png" alt="bomb">
+                            <img class="d-inline tunic-item" src="assets/dagger.png" alt="dagger">
+                            <img class="d-inline tunic-item" src="assets/wand.png" alt="wand">
+                        </div>
+                    </section>
+
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="temple"></section>
+
+                    <section class="text-light bg-primary-subtle mb-4 p-3 rounded text-center">
+                        <div>
+                            <img class="d-inline tunic-item" src="assets/sword.png" alt="sword">
+                            <img class="d-inline tunic-item" src="assets/dagger.png" alt="dagger">
+                            <img class="d-inline tunic-item" src="assets/wand.png" alt="wand">
+                            <img class="d-inline tunic-card" src="assets/rtsr.jpg" alt="orange peril ring">
+                        </div>
+                    </section>
+
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="heir"></section>
                 </div>
             </div>
         </div>

@@ -24,8 +24,18 @@
 .tunic-item{
     border-radius: 50%;
     border: 5px solid #333;
-    position: relative;
     background-color: #000;
+    width: 100px;
+    height: 100px;
+    margin: 0 4px;
+}
+
+.tunic-card{
+    border-radius: 25px;
+    border: 8px double #bcaf9d;
+    width: 97px;
+    height: 97px;
+    margin: 0 6px;
 }
 
 .shadow{
