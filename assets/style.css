@@ -30,6 +30,14 @@
     margin: 0 4px;
 }
 
+.tunic-item-header{
+    border-radius: 50%;
+    border: 7px solid #333;
+    background-color: #000;
+    width: 135px;
+    height: 135px;
+}
+
 .tunic-card{
     border-radius: 25px;
     border: 8px double #bcaf9d;
