@@ -30,8 +30,8 @@
             $("#irc-start").load("includes/step-irc-start.htm");
             $("#quarry-skip").load("includes/step-quarry-skip.htm");
             $("#elevator-skip").load("includes/step-elevator-skip.htm");
-            $("#scav").load("includes/step-scav-fight.htm");
-            $("#scav-alt").load("includes/step-scav-quick-kill.htm");
+            $("#scav").load("includes/step-scav-grapple.htm");
+            $("#scav-alt").load("includes/step-scav-fight.htm");
             $("#first-death").load("includes/step-resurrection.htm");
             
             $("#atoll").load("includes/step-atoll-warp.htm");
@@ -164,7 +164,7 @@
                             <div class="col-md-4">
                                 <p class="lead text-white">
                                     A great starting category, <b>New Game+ (Unrestricted)</b> starts you with
-                                    all major items, pages, and consumables items you need&mdash;and you get to fly.
+                                    all major items, pages, and consumable items you need&mdash;and you get to fly.
                                 </p>
                             </div>
                             <div class="col-md-8">
@@ -242,7 +242,8 @@
                                         <li>Run to the center of the top-left wall, wait for a Scavenger to charge, and grapple him down to you.</li>
                                         <li>Roll right and run down--the Scavenger should run to the right.</li>
                                         <li><a href="#" data-bs-toggle="modal" data-bs-target="#ice-grapple">Ice-grapple</a> and continue to grapple until you are pulled through the wall and fall.</li>
-                                        <li><b>Fire 3 neutral ice-beam shots quickly</b> as you start to fall, else you will hit a death plane. You should hit the loading zone for the Upper Ziggurat.</li>
+                                        <li><b>Fire 3 neutral ice-beam shots quickly</b> as you start to fall, else you will hit a death plane.</li>
+                                        <li>Once you land, roll back towards the door to hit the loading zone.</li>
                                     </ul>
                                 </div>
                                 <div class="col-lg-5">
@@ -352,12 +353,12 @@
                                             <li>If you are successful, you will hear the beginning of the effigy animation when the screen turns black.</li>
                                         </ul>
                                     </li>          
-                                    <li>On success, when you load in, fire one <a href="#" data-bs-toggle="modal" data-bs-target="#irc">ice beam</a> up-left and 3x more netural (no direction). You should land on the lower catwalk that takes you to the Boss Scavenger.</li>
+                                    <li>On success, when you load in, fire one <a href="#" data-bs-toggle="modal" data-bs-target="#irc">ice beam</a> up-left and 3x more neutral (no direction). You should land on the lower catwalk that takes you to the Boss Scavenger.</li>
                                 </ul>
                             </div>
                             <div class="col-lg-5">
                                 <div class="ratio ratio-16x9">
-                                    <video src="assets/ngp-un/wrong-warp.mp4" preload="none" controls poster="assets/ngp-un/wrong-warp.jpg" class="rounded shadow"></video>   
+                                    <video src="assets/ngp-un/wrong-warp.mp4" preload="none" controls poster="assets/ngp-un/wrong-warp.jpg" class="rounded shadow"></video>
                                 </div>
                             </div>
                         </div>                        
@@ -373,17 +374,12 @@
                     
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="scav"></section>
                     
-                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded">
-                        <a class="btn btn-outline-danger" role="button" data-bs-toggle="collapse" href="#scav-alt-box">
-                            SCAV QUICK KILL: This technique is only faster in NG+ if you get the best possible RNG.
-                            Otherwise, this will likely lose you time.
-                        </a>                    
-                        <div class="collapse" id="scav-alt-box">
-                            <hr>
-                            <div id="scav-alt">
-                                
-                            </div>
-                        </div>
+                    <a class="btn btn-outline-primary d-block mb-4" role="button" data-bs-toggle="collapse" href="#scav-alt-box">
+                        SCAV FIGHT: If the above is too difficult to learn or execute, fighting the Scavenger only loses a few seconds.
+                    </a>
+
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded collapse" id="scav-alt-box">
+                        <div id="scav-alt"></div>
                     </section>
                     
                     <section class="text-light bg-primary-subtle mb-4 p-3 rounded text-center">
