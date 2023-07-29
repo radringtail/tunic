@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta property="og:title" content="Gun% (No Major Glitches)">   
+    <meta property="og:title" content="True Ending (Unrestricted)">   
     <meta property="og:description" content="Guides to teach new players how to speedrun TUNIC.">
     <meta property="og:type" content="website">
     
-    <title>Gun% (No Major Glitches) | TUNIC Speedrun Guides</title>
+    <title>True Ending (Unrestricted) | TUNIC Speedrun Guides</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" crossorigin="anonymous">
@@ -23,16 +23,8 @@
                 window.open(this.href);
                 e.preventDefault();
             });
-
+            
             $("#loaded-modals").load("includes/modals.htm");
-            $("#plushie").load("includes/step-plushie.htm");
-            $("#gun-nmg").load("includes/steps-gun-nmg.htm", function(){
-                $('[data-bs-spy="scroll"]').each(function () {
-                    var $spy = $(this).scrollspy('refresh');
-                });
-            });
-            $("#gun").load("includes/step-gun.htm");
-
         });
     </script>
 </head>
@@ -71,50 +63,67 @@
         </div>
     </header>
     
-    <section class="section-pic d-print-none pt-4 pb-3" style="background-image: url('assets/gun-nmg/bg.jpg');">
+    <section class="section-pic d-print-none pt-4 pb-3" style="background-image: url('assets/te-un/bg.jpg');">
         <div class="px-4 my-5 text-center">
-            <img class="d-block mx-auto mb-4 tunic-item-header" src="assets/gun.png" alt="gun">
-            <h1 class="display-4 fw-bold">Gun%</h1>
-            <h2 class="display-5">No Major Glitches</h2>
+            <img class="d-block mx-auto mb-4 tunic-item-header" src="assets/stamina.png" alt="stamina upgrade">
+            <h1 class="display-4 fw-bold">True Ending</h1>
+            <h2 class="display-5">Unrestricted</h2>
         </div>
     </section>
-    
     <section class="py-5 mb-5">
         <div class="container" id="content">
             <div class="row">
                 <div class="col-lg-3">
-                    <div class="p-3 bg-dark-subtle rounded sticky-top mb-4">
-                        <a href="/" class="pb-3 mb-3 link-light text-decoration-none">
-                            <span class="fs-5 fw-semibold">Gun% (No Major Glitches)</span>
-                        </a>
+                    <div class="p-3 bg-dark-subtle rounded sticky-top overflow-y-scroll mb-4 guide-menu">
+                        <span class="mb-3 text-white fs-5 fw-semibold">
+                            True Ending (Unrestricted)
+                        </span>
                         <hr>
-                        <div class="list-group list-group-numbered" id="gun-un">
-                            <a href="#plushie" class="list-group-item list-group-item-action">Plush Start</a>
-                            <a href="#bomb" class="list-group-item list-group-item-action">Use Bomb</a>
-                            <a href="#envoy" class="list-group-item list-group-item-action">Roll Past Envoy</a>
-                            <a href="#scavs" class="list-group-item list-group-item-action">Run Through Quarry</a>
-                            <a href="#gun" class="list-group-item list-group-item-action">Acquire Gun</a>
-                        </div>
-                        <hr>
-                        <div class="list-group">
-                            <a href="https://www.speedrun.com/tunic?h=Gun-NMG&x=wdmmojed-6nj5e1el.z19p970l" class="list-group-item list-group-item-action list-group-item-info external">View Leaderboard</a>
-                            <a href="https://www.speedrun.com/tunic/run/new#Gun" class="list-group-item list-group-item-action list-group-item-info external">Submit Run</a>
+                        <div id="sidebar-menu">
+                            <p><em>Guide coming one day.</em></p>
+                            <hr>
+                            <div class="list-group">
+                                <a href="https://www.speedrun.com/tunic?h=True_Ending-Unrestricted&x=xd15yg82-6nj5e1el.p120w37l" class="list-group-item list-group-item-action list-group-item-info external">View Leaderboard</a>
+                                <a href="https://www.speedrun.com/tunic/runs/new?h=True_Ending-Unrestricted&x=xd15yg82-6nj5e1el.p120w37l" class="list-group-item list-group-item-action list-group-item-info external">Submit Run</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-9" data-bs-spy="scroll" data-bs-target="#gun-un" data-bs-offset="0">                    
+                <div class="col-lg-9" data-bs-spy="scroll" data-bs-target="#sidebar-menu" data-bs-offset="0">                        
+                    <section class="p-5 mb-4 rounded bg-secondary-subtle">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p class="lead text-white">
+                                    Combining flying and stealing, <b>True Ending (Unrestricted)</b> is a difficult run combining a bit of everything the TUNIC speed game has to offer (except the Golden Path).
+                                </p>
+                            </div>
+                            <div class="col-md-8">
+                                <p>
+                                    <i>True Ending</i> might be the best major category in TUNIC. This ruleset mixes in Ladder Storage to simplify some sections of <i>No Major Glitches</i> (getting into Atoll and Frog's Domain, West Garden, Mountaintop), but complicates others (Dark Tomb, Swamp, skipping the Admin tower in Zigg) and leaves you more fragile in some spots (Gauntlet). But: it's gets unlimited stamina. Pros and cons.
+                                </p>
+                                <p>
+                                    Because of route optimizations using major glitches, this variant is a bit more difficult / more fragile than <i>No Major Glitches</i>, but also a bit shorter.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    
                     <section class="text-light bg-primary-subtle mb-4 p-3 rounded text-center">
                         <div class="h5">
                             Be sure you have read over <a href="index.htm#start">Getting Started</a> before beginning this guide.
                         </div>
-                    </section>
-
-                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="plushie">
+                        <hr>
+                        <p>
+                            Until I've had time to create a guide in this site's format, please check out the following videos.
+                        </p>
                     </section>
                     
-                    <div id="gun-nmg"></div>
-                    
-                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="gun">
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="jabber">
+                        <h1>Current WR</h1>
+                        <hr>
+                        <div class="ratio ratio-16x9 mb-4">
+                            <iframe src="https://www.youtube.com/embed/8BudvfDta9o" title="YouTube video player" frameborder="0" allow="encrypted-media; gyroscope; picture-in-picture;" allowfullscreen class="rounded shadow"></iframe>
+                        </div>                       
                     </section>
                 </div>
             </div>

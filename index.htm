@@ -72,7 +72,7 @@
         <div class="container col-xxl-9" id="content">
             <div class="row flex-lg-row-reverse align-items-center g-4 py-5">
                 <div class="col-12 col-lg-6">
-                    <img src="assets/example.jpg" class="d-block mx-lg-auto img-fluid rounded shadow-lg" alt="screenshot" loading="lazy" width="960" height="540">
+                    <img src="assets/example.jpg" class="d-block mx-lg-auto img-fluid rounded-4 shadow-lg" alt="screenshot" loading="lazy" width="960" height="540">
                 </div>
                 <div class="col-lg-6">
                     <h1 class="display-5 fw-bold mb-3 text-light">
@@ -107,7 +107,7 @@
                         Complete the game as quickly as possible through any means.
                     </p>
                     <a href="any-unrestricted.htm" class="btn btn-sm btn-success">Unrestricted</a>
-                    <a href="#" class="disabled btn btn-sm btn-primary">No Major Glitches</a>
+                    <a href="any-nmg.htm" class="btn btn-sm btn-primary">No Major Glitches</a>
                     <a href="any-restricted.htm" class="btn btn-sm btn-danger">Restricted</a>
                 </div>
                 <div class="col">
@@ -118,28 +118,26 @@
                     </p>
                     <a href="ngp-unrestricted.htm" class="btn btn-sm btn-success">Unrestricted</a>
                     <a href="ngp-nmg.htm" class="btn btn-sm btn-primary">No Major Glitches</a>
-                    <a href="#" class="disabled btn btn-sm btn-danger">Restricted</a>
+                    <a href="ngp-restricted.htm" class="btn btn-sm btn-danger">Restricted</a>
                 </div>
                 <div class="col">
                     <h3 class="text-white">True Ending</h3>
                     <hr>
                     <p class="lead">
-                        Complete the game as quickly as possible and 
-                        collect all 28 manual pages.
+                        Complete the game as quickly as possible and collect all 28 manual pages.
                     </p>
-                    <a href="#" class="disabled btn btn-sm btn-success">Unrestricted</a>
-                    <a href="#" class="disabled btn btn-sm btn-primary">No Major Glitches</a>
-                    <a href="#" class="disabled btn btn-sm btn-danger">Restricted</a>
+                    <a href="true-ending-unrestricted.htm" class="btn btn-sm btn-success">Unrestricted</a>
+                    <a href="true-ending-nmg.htm" class="btn btn-sm btn-primary">No Major Glitches</a>
+                    <a href="true-ending-restricted.htm" class="btn btn-sm btn-danger">Restricted</a>
                 </div>
                 <div class="col">
                     <h3 class="text-white">All Relics</h3>
                     <hr>
                     <p class="lead">
-                        Complete the game as quickly as possible and 
-                        obtain all six Hero Relics.
+                        Complete the game as quickly as possible and obtain all six Hero Relics.
                     </p>
-                    <a href="#" class="disabled btn btn-sm btn-success">Unrestricted</a>
-                    <a href="#" class="disabled btn btn-sm btn-primary">No Major Glitches</a>
+                    <span class="btn btn-sm btn-secondary"><abbr title="No runs submitted.">Unrestricted</abbr></span>
+                    <a href="allrelics-nmg.htm" class="btn btn-sm btn-primary">No Major Glitches</a>
                     <a href="allrelics-restricted.htm" class="btn btn-sm btn-danger">Restricted</a>
                 </div>
                 <div class="col">
@@ -148,9 +146,9 @@
                     <p class="lead">
                         Complete the game and get every upgrade, relic, page, treasure, flask, card, etc.
                     </p>
-                    <a href="#" class="disabled btn btn-sm btn-success">Unrestricted</a>
-                    <a href="#" class="disabled btn btn-sm btn-primary">No Major Glitches</a>
-                    <a href="#" class="disabled btn btn-sm btn-danger">Restricted</a>
+                    <a href="100-unrestricted.htm" class="btn btn-sm btn-success">Unrestricted</a>
+                    <span class="btn btn-sm btn-secondary"><abbr title="No runs submitted.">No Major Glitches</abbr></span>
+                    <a href="100-restricted.htm" class="btn btn-sm btn-danger">Restricted</a>
                 </div>
                 <div class="col">
                     <h3 class="text-white">Gun%</h3>
@@ -329,13 +327,13 @@
     <section class="section-pic d-print-none py-4" id="links" style="background-image: url('assets/links.jpg');">
         <div class="px-4 my-5 text-center">
             <img class="d-block mx-auto mb-4 tunic-item" src="assets/dagger.png" alt="" width="100" height="100">
-            <h1 class="display-5 fw-bold">Speedrunning Links</h1>
+            <h1 class="display-5 fw-bold">Other Links</h1>
         </div>
     </section>
     
     <section class="py-5">
         <div class="container overflow-hidden py-2 py-sm-5">
-            <div class="row row-cols-1 row-cols-lg-2 g-5">
+            <div class="row row-cols-1 row-cols-lg-3 g-5">
                 <div class="col">
                     <h3 class="text-white">
                         <a href="https://www.speedrun.com/tunic" class="text-decoration-none link-light external">
@@ -344,13 +342,11 @@
                         </a>
                     </h3>
                     <p class="lead">
-                        The official home of our leaderboards, guides and resources.
+                        Rules, guides and resources
                     </p>
                     <hr>
                     <p>
-                        Every run submission must be submitted to speedrun.com (SRC), and thus you can find
-                        plenty of example runs in every category. Also the source of all official, up-to-date
-                        rules, tools and resources, splits and saves.
+                        Every run must be submitted to speedrun.com (SRC), and thus you can find plenty of example runs in every category. Also the source of all official, up-to-date rules, tools and resources, splits and saves.
                     </p>
                     <a href="https://www.speedrun.com/tunic" class="btn btn-success">
                         Visit SRC
@@ -364,16 +360,32 @@
                         </a>
                     </h3>
                     <p class="lead">
-                        A Discord server for the speedrunning community.
+                        A Discord server for speedrunning
                     </p>
                     <hr>
                     <p>
-                        Whether you're interested in running TUNIC yourself, want to help us find skips and glitches,
-                        or you simply enjoy watching runs — this is a great place to become a part of the community
-                        and hang out with other TUNIC fans.
+                        Whether you're interested in running TUNIC yourself, want to help us find skips and glitches, or you simply enjoy watching runs — this is a great place to become a part of the community and hang out with other fans.
                     </p>
                     <a href="https://discord.gg/HXkztJgQWj" class="btn btn-success external">
                         Join Server
+                    </a>
+                </div>
+                <div class="col">
+                    <h3 class="text-white">
+                        <a href="https://github.com/silent-destroyer/tunic-randomizer" class="text-decoration-none link-light external">
+                            <i class="fas fa-random text-success-emphasis pe-1"></i>
+                            Randomizer Mod
+                        </a>
+                    </h3>
+                    <p class="lead">
+                        An extensive randomizer mod for PC
+                    </p>
+                    <hr>
+                    <p>
+                        Created by <a href="https://twitch.tv/SilentDestroyerSR">SilentDestroyer</a>, this mod features randomization of every item in the game, as well as enemy randomization, enhanced fox customization, custom items, and much, much more!
+                    </p>
+                    <a href="https://github.com/silent-destroyer/tunic-randomizer" class="btn btn-success external">
+                        Download Mod
                     </a>
                 </div>
             </div>
@@ -386,7 +398,7 @@
         <div class="container">
             <p>
                 &copy; 2023 <a href="https://twitch.tv/radicoon" class="link-light">Radicoon</a>
-                &bull; Built Using <a href="https://getbootstrap.com/docs/5.2/" class="link-light">Bootstrap</a>
+                &bull; Built Using <a href="https://getbootstrap.com/docs/5.3/" class="link-light">Bootstrap</a>
                 and <a href="https://fontawesome.com/" class="link-light">Font Awesome</a> <small><i class="fas fa-heart"></i></small>
             </p>
         </div>

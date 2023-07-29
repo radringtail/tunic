@@ -34,8 +34,8 @@
             $("#kevin-skip").load("includes/step-kevin-clip.htm");
             $("#lower-zigg").load("includes/step-zigg-lower.htm");
             $("#admins-skip").load("includes/step-double-admin-skip.htm");
-            $("#scav").load("includes/step-scav-fight.htm");
-            $("#scav-alt").load("includes/step-scav-quick-kill.htm");
+            $("#scav").load("includes/step-scav-grapple.htm");
+            $("#scav-alt").load("includes/step-scav-fight.htm");
             $("#first-death").load("includes/step-resurrection.htm");
             
             $("#atoll").load("includes/step-atoll-warp.htm");
@@ -94,7 +94,7 @@
     
     <section class="section-pic d-print-none pt-4 pb-3" style="background-image: url('assets/ngp-nmg/bg.jpg');">
         <div class="px-4 my-5 text-center">
-            <img class="d-block mx-auto mb-4 tunic-item-header" src="assets/lantern.png" alt="lantern">
+            <img class="d-block mx-auto mb-4 tunic-item-header" src="assets/orb.png" alt="orb">
             <h1 class="display-4 fw-bold">New Game+</h1>
             <h2 class="display-5">No Major Glitches</h2>
         </div>
@@ -105,9 +105,9 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="p-3 bg-dark-subtle rounded sticky-top overflow-y-scroll mb-4 guide-menu">
-                        <a href="/" class="pb-3 mb-3 link-light text-decoration-none">
-                            <span class="fs-5 fw-semibold">New Game+ (NMG)</span>
-                        </a>
+                        <span class="mb-3 text-white fs-5 fw-semibold">
+                            New Game+ (NMG)
+                        </span>
                         <hr>
                         <div id="sidebar-menu">
                             <div class="h5 text-light">
@@ -159,7 +159,7 @@
                             <hr>
                             <div class="list-group">
                                 <a href="https://www.speedrun.com/tunic?h=Any_NG-NMG&x=vdoy7l92-6nj5e1el.z19p970l" class="list-group-item list-group-item-action list-group-item-info external">View Leaderboard</a>
-                                <a href="https://www.speedrun.com/tunic/run/new#Any_NG" class="list-group-item list-group-item-action list-group-item-info external">Submit Run</a>
+                                <a href="https://www.speedrun.com/tunic/runs/new?h=Any_NG-NMG&x=vdoy7l92-6nj5e1el.z19p970l" class="list-group-item list-group-item-action list-group-item-info external">Submit Run</a>
                             </div>
                         </div>
                     </div>
@@ -188,7 +188,13 @@
                             </div>
                         </div>
                     </section>
-                    
+
+                    <section class="text-light bg-primary-subtle mb-4 p-3 rounded text-center">
+                        <div class="h5">
+                            Be sure you have read over <a href="index.htm#start">Getting Started</a> before beginning this guide.
+                        </div>
+                    </section>
+
                     <section class="text-light bg-primary-subtle mb-4 p-4 rounded text-center">
                         <div>
                             <img class="d-inline tunic-item" src="assets/orb.png" alt="" width="100" height="100">
@@ -295,7 +301,7 @@
                     
                     <section class="text-light bg-primary-subtle mb-4 p-3 rounded text-center">
                         <div>
-                            <img class="d-inline tunic-item" src="assets/sword.png" alt="" width="100" height="100">
+                            <img class="d-inline tunic-item" src="assets/orb.png" alt="" width="100" height="100">
                             <img class="d-inline tunic-item" src="assets/dagger.png" alt="" width="100" height="100">
                             <img class="d-inline tunic-item" src="assets/wand.png" alt="" width="100" height="100">
                         </div>
@@ -303,17 +309,12 @@
                     
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="scav"></section>
                     
-                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded">
-                        <a class="btn btn-outline-danger" role="button" data-bs-toggle="collapse" href="#scav-alt-box">
-                            SCAV QUICK KILL: This technique is only faster in NG+ if you get the best possible RNG.
-                            Otherwise, this will likely lose you time.
-                        </a>                    
-                        <div class="collapse" id="scav-alt-box">
-                            <hr>
-                            <div id="scav-alt">
-                                
-                            </div>
-                        </div>
+                    <a class="btn btn-outline-primary d-block mb-4" role="button" data-bs-toggle="collapse" href="#scav-alt-box">
+                        SCAV FIGHT: If the above is too difficult to learn or execute, fighting the Scavenger only loses a few seconds.
+                    </a>
+
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded collapse" id="scav-alt-box">
+                        <div id="scav-alt"></div>
                     </section>
                     
                     <section class="text-light bg-primary-subtle mb-4 p-3 rounded text-center">
