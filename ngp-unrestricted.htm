@@ -27,9 +27,9 @@
             $("#loaded-modals").load("includes/modals.htm");
             
             // load re-usable modules
-            $("#irc-start").load("includes/step-irc-start.htm");
+            $("#irc-start").load("includes/step-overworld-irc-start.htm");
             $("#quarry-skip").load("includes/step-quarry-skip.htm");
-            $("#elevator-skip").load("includes/step-elevator-skip.htm");
+            $("#elevator-skip").load("includes/step-zigg-elevator-skip.htm");
             $("#scav").load("includes/step-scav-grapple.htm");
             $("#scav-alt").load("includes/step-scav-fight.htm");
             $("#first-death").load("includes/step-resurrection.htm");
@@ -44,12 +44,12 @@
             $("#outside").load("includes/step-fortress-outside.htm");
             $("#doorclip").load("includes/step-fortress-door.htm");
             $("#siege").load("includes/step-siege-quick.htm");
-            $("#redkey").load("includes/step-redkey-dw.htm");
+            $("#redkey").load("includes/step-siege-redkey-dw.htm");
             
-            $("#blobby").load("includes/step-blobby-clip.htm");
-            $("#keys").load("includes/step-dropkeys-irc.htm");
+            $("#blobby").load("includes/step-overworld-blobby-clip.htm");
+            $("#keys").load("includes/step-temple-dropkeys-irc.htm");
             $("#heir-cutscene").load("includes/step-heir-cutscene-skip.htm");
-            $("#finish").load("includes/step-turn-in-manual.htm");
+            $("#finish").load("includes/step-heir-turn-in-manual.htm");
         });
     </script>
 </head>
@@ -60,7 +60,10 @@
         <div class="container">
             <nav class="navbar navbar-expand-md">
                 <div class="container-fluid">
-                    <a class="navbar-brand fs-4" href="index.htm">TUNIC Speedrun Guides</a>
+                    <a class="navbar-brand fs-4" href="index.htm">
+                        <img src="assets/icon.png" alt="fox head icon" height="30" class="mb-2 me-1">
+                        TUNIC Speedrun Guides
+                    </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
