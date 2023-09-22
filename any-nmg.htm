@@ -18,6 +18,17 @@
     
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2JJJC5YWMC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'G-2JJJC5YWMC');
+    </script>
+
     <script>
         $(function(){ 
             $("a.external, a[href$='.pdf']").click(function(e){
@@ -26,6 +37,50 @@
             });
             
             $("#loaded-modals").load("includes/modals.htm");
+            
+            // load re-usable modules
+            $("#wake").load("includes/step-overworld-start-nmg.htm");
+            $("#to-atoll").load("includes/step-overworld-bomb-atoll-nmg.htm");
+            $("#to-frogs-domain").load("includes/step-atoll-frogs-nmg.htm");
+            $("#frogs-domain").load("includes/step-frogs-domain-nmg.htm");
+            $("#resurrection").load("includes/step-resurrection.htm");
+
+            $("#to-west-garden").load("includes/step-overworld-to-west-garden-nmg.htm");
+            $("#sword").load("includes/step-west-garden-sword.htm");
+            $("#terry").load("includes/step-west-garden-terry-drop.htm");
+            $("#ice-bomb-skip").load("includes/step-west-garden-ice-bomb-skip.htm");
+            $("#dagger").load("includes/step-west-garden-dagger-nmg.htm");
+
+            $("#to-dark-tomb").load("includes/step-overworld-to-dark-tomb-nmg.htm");
+            $("#rtsr").load("includes/step-darktomb-rtsr.htm");
+            $("#wand").load("includes/step-overworld-wand.htm");
+            $("#to-pass").load("includes/step-overworld-to-pass.htm");
+            $("#quarry-skip").load("includes/step-quarry-skip.htm");
+
+            $("#elevator-skip").load("includes/step-zigg-elevator-skip.htm");
+            $("#upper-zigg").load("includes/step-zigg-fairies-any.htm");
+            $("#admin-skip").load("includes/step-zigg-admin-skip-nmg.htm");
+            $("#kevin-clip").load("includes/step-zigg-kevin-clip.htm");
+            $("#lower-zigg").load("includes/step-zigg-lower-nmg.htm");
+            $("#admins-skip").load("includes/step-zigg-2x-admin-dagger-any.htm");
+            $("#scavenger").load("includes/step-scav-quick-kill.htm");
+
+            $("#fuses12").load("includes/step-atoll-fuse12.htm");
+            $("#fuses34").load("includes/step-atoll-fuse34.htm");
+            $("#library").load("includes/step-atoll-library.htm");
+            $("#librarian").load("includes/step-librarian-lure.htm");
+
+            $("#to-overworld").load("includes/step-atoll-to-overworld.htm");
+            $("#shortcut-skip").load("includes/step-fortress-enter.htm");
+            $("#outside-fortress").load("includes/step-fortress-outside.htm");
+            $("#door-clip").load("includes/step-fortress-door.htm");
+            $("#siege").load("includes/step-siege-quick.htm");
+            $("#redkey").load("includes/step-siege-redkey-dw.htm");
+
+            $("#blobby").load("includes/step-overworld-blobby-clip.htm");
+            $("#keys").load("includes/step-temple-dropkeys-irc.htm");
+            $("#heir-cutscene").load("includes/step-heir-cutscene-skip.htm");
+            $("#heir").load("includes/step-heir-fight-restr.htm");
         });
     </script>
 </head>
@@ -84,7 +139,85 @@
                         </span>
                         <hr>
                         <div id="sidebar-menu">
-                            <p><em>Guide coming one day.</em></p>
+                            <div class="h5 text-light">
+                                Acquire Orb
+                            </div>
+                            <ol class="list-group list-group-numbered mb-3 small">
+                                <a href="#wake" class="list-group-item list-group-item-action">Wake Up</a>
+                                <a href="#to-atoll" class="list-group-item list-group-item-action">Sneak to Atoll</a>
+                                <a href="#to-frogs-domain" class="list-group-item list-group-item-action">To Frog's Domain</a>
+                                <a href="#frogs-domain" class="list-group-item list-group-item-action">Frog's Domain</a>
+                                <a href="#resurrection" class="list-group-item list-group-item-action">Resurrection</a>
+                            </ol> 
+                            
+                            <div class="h5 text-light">
+                                Acquire Dagger
+                            </div>
+                            <ol class="list-group list-group-numbered mb-3 small">
+                                <a href="#to-west-garden" class="list-group-item list-group-item-action">Enter West Garden</a>
+                                <a href="#sword" class="list-group-item list-group-item-action">Get Sword</a>
+                                <a href="#terry" class="list-group-item list-group-item-action">Terry Drop</a>
+                                <a href="#ice-bomb-skip" class="list-group-item list-group-item-action">Ice Bomb Skip</a>
+                                <a href="#dagger" class="list-group-item list-group-item-action">Get Dagger</a>
+                            </ol> 
+                            
+                            <div class="h5 text-light">
+                                Enter Ziggurat
+                            </div>
+                            <ol class="list-group list-group-numbered mb-3 small">
+                                <a href="#to-dark-tomb" class="list-group-item list-group-item-action">To Dark Tomb</a>
+                                <a href="#rtsr" class="list-group-item list-group-item-action">Orange Peril Ring</a>
+                                <a href="#wand" class="list-group-item list-group-item-action">Wand</a>
+                                <a href="#to-pass" class="list-group-item list-group-item-action">To Forbidden Pass</a>
+                                <a href="#quarry-skip" class="list-group-item list-group-item-action">Quarry Skip</a>
+                            </ol> 
+                            
+                            <div class="h5 text-light">
+                                Blue Key
+                            </div>
+                            <ol class="list-group list-group-numbered mb-3 small">
+                                <a href="#elevator-skip" class="list-group-item list-group-item-action">Elevator Skip</a>
+                                <a href="#upper-zigg" class="list-group-item list-group-item-action">Upper Ziggurat</a>
+                                <a href="#admin-skip" class="list-group-item list-group-item-action">Admin Skip</a>
+                                <a href="#kevin-clip" class="list-group-item list-group-item-action">Kevin Clip</a>
+                                <a href="#lower-zigg" class="list-group-item list-group-item-action">Lower Ziggurat</a>
+                                <a href="#admins-skip" class="list-group-item list-group-item-action">2X Admin Skip</a>
+                                <a href="#scavenger" class="list-group-item list-group-item-action">Boss: Scavenger</a>
+                            </ol> 
+                            
+                            <div class="h5 text-light">
+                                Green Key
+                            </div>
+                            <ol class="list-group list-group-numbered mb-3 small">
+                                <a href="#fuses12" class="list-group-item list-group-item-action">NW/SW Fuses</a>
+                                <a href="#fuses34" class="list-group-item list-group-item-action">NE/SE Fuses</a>
+                                <a href="#library" class="list-group-item list-group-item-action">Enter Library</a>
+                                <a href="#librarian" class="list-group-item list-group-item-action">Boss: Librarian</a>
+                            </ol> 
+                            
+                            <div class="h5 text-light">
+                                Red Key
+                            </div>
+                            <ol class="list-group list-group-numbered mb-3 small">
+                                <a href="#to-overworld" class="list-group-item list-group-item-action">To Overworld Save</a>
+                                <a href="#shortcut-skip" class="list-group-item list-group-item-action">Shortcut Skip</a>
+                                <a href="#outside-fortress" class="list-group-item list-group-item-action">Outside Fortress</a>
+                                <a href="#door-clip" class="list-group-item list-group-item-action">Sealed Door Clip</a>
+                                <a href="#siege" class="list-group-item list-group-item-action">Boss: Siege Engine</a>
+                                <a href="#redkey" class="list-group-item list-group-item-action">Red Key</a>
+                            </ol> 
+                            
+                            <div class="h5 text-light">
+                                Sealed Temple / End
+                            </div>
+                            <ol class="list-group list-group-numbered mb-3 small">
+                                <a href="#blobby" class="list-group-item list-group-item-action">Temple Door Clip</a>
+                                <a href="#keys" class="list-group-item list-group-item-action">Drop Keys</a>
+                                <a href="#to-heir" class="list-group-item list-group-item-action">Warp to Heir</a>
+                                <a href="#heir-cutscene" class="list-group-item list-group-item-action">Heir Cutscene Skip</a>
+                                <a href="#heir" class="list-group-item list-group-item-action">Boss: Heir</a>
+                            </ol>
+                            
                             <hr>
                             <div class="list-group">
                                 <a href="https://www.speedrun.com/tunic?h=Any-NMG&x=z27v96z2-6nj5e1el.z19p970l" class="list-group-item list-group-item-action list-group-item-info external">View Leaderboard</a>
@@ -112,7 +245,7 @@
                         </div>
                     </section>
                     
-                    <section class="text-light bg-primary-subtle mb-4 p-3 rounded text-center">
+                    <section class="text-light bg-primary-subtle mb-4 p-3 rounded-5 text-center">
                         <div class="h5">
                             Be sure you have read over <a href="index.htm#start">Getting Started</a> before beginning this guide.
                         </div>
@@ -121,14 +254,103 @@
                             Until I've had time to create a guide in this site's format, please check out the following videos.
                         </p>
                     </section>
-                    
-                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="jabber">
-                        <h1>Current WR</h1>
-                        <hr>
-                        <div class="ratio ratio-16x9 mb-4">
-                            <iframe src="https://www.youtube.com/embed/ZBs2lOczvmU" title="YouTube video player" frameborder="0" allow="encrypted-media; gyroscope; picture-in-picture;" allowfullscreen class="rounded shadow"></iframe>
-                        </div>                       
+
+                    <h1 class="display-2 p-5 m-5 rounded bg-body-secondary shadow-lg">Acquire Orb</h1>
+
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="wake">Plush Start</section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="to-atoll">Sneak to Atoll</section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="to-frogs-domain">To Frog's Domain</section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="frogs-domain">Frog's Domain</section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="resurrection">Resurrection</section>
+
+                    <h1 class="display-2 p-5 m-5 rounded bg-body-secondary shadow-lg">Acquire Dagger</h1>
+
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="to-west-garden">Enter West Garden</section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="sword">Get Sword</section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="terry">Terry Drop</section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="ice-bomb-skip">Ice Bomb Skip</section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="dagger">Get Dagger</section>
+
+                    <h1 class="display-2 p-5 m-5 rounded bg-body-secondary shadow-lg">Enter Ziggurat</h1>
+
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="to-dark-tomb">To Dark Tomb</section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="rtsr">Orange Peril Ring</section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="wand">Wand</section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="to-pass">To Forbidden Pass</section>
+
+                    <section class="text-light bg-primary-subtle mb-4 p-3 rounded rounded-5 text-center">
+                        <div>
+                            <img class="d-inline tunic-item" src="assets/orb.png" alt="orb">
+                            <img class="d-inline tunic-item" src="assets/dagger.png" alt="dagger">
+                            <img class="d-inline tunic-item" src="assets/wand.png" alt="wand">
+                            <img class="d-inline tunic-card" src="assets/rtsr.jpg" alt="orange peril ring">
+                        </div>
                     </section>
+
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="quarry-skip">Quarry Skip</section>
+                    <h1 class="display-2 p-5 m-5 rounded bg-body-secondary shadow-lg">Blue Key</h1>
+ 
+                    <section class="text-light bg-primary-subtle mb-4 p-3 rounded rounded-5 text-center">
+                        <div>
+                            <img class="d-inline tunic-item" src="assets/effigy.png" alt="effigy">
+                            <img class="d-inline tunic-item" src="assets/dagger.png" alt="dagger">
+                            <img class="d-inline tunic-item" src="assets/wand.png" alt="wand">
+                        </div>
+                    </section>
+
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="elevator-skip">Elevator Skip</section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="upper-zigg">Upper Ziggurat</section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="admin-skip">Admin Skip</section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="kevin-clip">Kevin Clip</section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="lower-zigg">Lower Ziggurat</section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="admins-skip">2X Admin Skip</section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="scavenger">Boss: Scavenger</section>
+
+                    <h1 class="display-2 p-5 m-5 rounded bg-body-secondary shadow-lg">Green Key</h1>
+
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="fuses12">NW/SW Fuses</section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="fuses34">NE/SE Fuses</section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="library">Enter Library</section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="librarian">Boss: Librarian</section>
+
+                    <h1 class="display-2 p-5 m-5 rounded bg-body-secondary shadow-lg">Red Key</h1>
+
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="to-overworld">To Overworld</section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="shortcut-skip">Shortcut Skip</section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="outside-fortress">Outside Fortress</section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="door-clip">Sealed Door Clip</section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="siege">Boss: Siege Engine</section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="redkey">Red Key</section>                            
+
+                    <h1 class="display-2 p-5 m-5 rounded bg-body-secondary shadow-lg">The Heir</h1>
+
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="blobby">Temple Door Clip</section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="keys">Drop Keys</section>
+
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="to-heir">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <h1>Warp to Heir</h1>
+                                <hr>
+                                <ol>
+                                    <li class="py-1">
+                                        Run to the Overworld West warp point. To avoid aggro-ing enemies, walk through the top-left corner of the bushes (you need to cut them down).
+                                    </li>
+                                    <li class="py-1">
+                                        Enter the middle warp pad in The Far Shore.
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="ratio ratio-16x9">
+                                    <img src="assets/ngp-nmg/heir.jpg" class="rounded shadow"></video>   
+                                </div>
+                            </div>
+                        </div>                            
+                    </section>
+
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="heir-cutscene">Heir Cutscene Skip</section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="heir">Boss: Heir</section>
                 </div>
             </div>
         </div>
