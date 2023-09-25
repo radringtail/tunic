@@ -49,7 +49,8 @@
             $("#dagger").load("includes/step-west-garden-dagger-un.htm");
             
             $("#to-dark-tomb").load("includes/step-overworld-to-dark-tomb-un.htm");
-            $("#rtsr").load("includes/step-darktomb-rtsr.htm");
+            $("#rtsr").load("includes/step-darktomb-un.htm");
+            $("#dt-alt").load("includes/step-darktomb-rtsr.htm");
             $("#wand").load("includes/step-overworld-wand.htm");
             $("#to-pass").load("includes/step-overworld-to-pass-un.htm");
             $("#quarry-skip").load("includes/step-quarry-skip.htm");
@@ -303,12 +304,19 @@
                     
                     <section class="text-light bg-primary-subtle mb-4 p-3 rounded rounded-5 text-center">
                         <div>
+                            <img class="d-inline tunic-item" src="assets/sword.png" alt="sword">
                             <img class="d-inline tunic-item" src="assets/orb.png" alt="orb">
                         </div>
                     </section>
                     
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="to-dark-tomb">To Dark Tomb</section>
-                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="rtsr">Orange Peril Ring</section>
+
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="rtsr">RTSR UR</section>
+
+                    <a class="btn btn-outline-info d-block mb-4" role="button" data-bs-toggle="collapse" href="#dt-alt">If you find this too inconsistent, the <i>No Major Glitches</i> tech works almost as quickly.</a>
+
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded collapse" id="dt-alt">RTSR NMG</section>
+                    
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="wand">Wand</section>
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="to-pass">To Forbidden Pass</section>
                     
