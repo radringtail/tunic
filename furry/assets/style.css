@@ -1,0 +1,13 @@
+body{
+    background-image: url('bg.jpg');
+}
+
+.section-pic{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    position: relative;
+    border-radius: 0;
+    color: #fafafa;
+    box-shadow: 0 0 8px #111;
+}
