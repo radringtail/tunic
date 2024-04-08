@@ -60,7 +60,9 @@
         $("#kevin-clip").load("includes/step-zigg-kevin-clip.htm");
         $("#lower-zigg").load("includes/step-zigg-lower-nmg.htm");
         $("#admins-skip").load("includes/step-zigg-2x-admin-dagger-any.htm");
-        $("#scavenger").load("includes/step-scav-quick-kill.htm");
+    
+        $("#scav-alt1").load("includes/step-scav-grapple.htm");
+        $("#scav-alt2").load("includes/step-scav-quick-kill.htm");
         
         $("#fuses12").load("includes/step-atoll-fuse12.htm");
         $("#fuses34").load("includes/step-atoll-fuse34.htm");
@@ -376,7 +378,16 @@
                         </div>
                     </section>
 
-                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="scavenger">Boss: Scavenger</section>
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="scavenger">
+                        <h1>Boss: Scavenger</h1>
+                        <hr>
+                        
+                        <a class="btn btn-lg btn-success d-block mb-4" role="button" data-bs-toggle="collapse" href="#scav-alt1">If you have 8+ wand shots worth of mana</a>
+                        <div id="scav-alt1" class="collapse"></div>
+                        
+                        <a class="btn btn-lg btn-primary d-block mb-4" role="button" data-bs-toggle="collapse" href="#scav-alt2">If you have 7 or less wand shots worth of mana</a>                        
+                        <div id="scav-alt2" class="collapse"></div>
+                    </section>
                     
                     <h1 class="display-2 p-5 m-5 rounded bg-body-secondary shadow-lg">Green Key</h1>
 
