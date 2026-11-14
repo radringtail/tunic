@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta property="og:title" content="Any% (Unrestricted)">   
+    <meta property="og:title" content="Any% (Unrestricted)">
     <meta property="og:image" content="https://tunic.run/assets/stick.png">
     <meta property="og:description" content="Our default board, Any% (Unrestricted) is a technical, fragile, challenging run full of glitches, tricks, RNG, and a bit of flying fox.">
     <meta property="og:type" content="website">
-    
+
     <title>Any% (Unrestricted) | TUNIC Speedrun Guides</title>
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="icon" type="image/png" href="assets/icon.png">
-    
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2JJJC5YWMC"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-        
+
         gtag('config', 'G-2JJJC5YWMC');
-        
-        $(function(){ 
-            $("a.external, a[href$='.pdf']").click(function(e){
+
+        $(function () {
+            $("a.external, a[href$='.pdf']").click(function (e) {
                 window.open(this.href);
                 e.preventDefault();
             });
-            
+
             $("#loaded-modals").load("includes/modals.htm");
-            
+
             // load re-usable modules
             $("#wake").load("includes/step-overworld-start-nmg.htm");
             $("#stick").load("includes/step-overworld-stick.htm");
@@ -42,38 +43,38 @@
             $("#to-frogs-domain").load("includes/step-atoll-frogs-un.htm");
             $("#frogs-domain").load("includes/step-frogs-domain-un.htm");
             $("#resurrection").load("includes/step-resurrection.htm");
-            
+
             $("#to-west-garden").load("includes/step-overworld-to-west-garden-un.htm");
             $("#sword").load("includes/step-west-garden-sword.htm");
             $("#west-garden").load("includes/step-west-garden-un.htm");
             $("#dagger").load("includes/step-west-garden-dagger-un.htm");
-            
+
             $("#to-dark-tomb").load("includes/step-overworld-to-dark-tomb-un.htm");
             $("#rtsr").load("includes/step-darktomb-un.htm");
             $("#dt-alt").load("includes/step-darktomb-rtsr.htm");
             $("#wand").load("includes/step-overworld-wand.htm");
             $("#to-pass").load("includes/step-overworld-to-pass-un.htm");
             $("#quarry-skip").load("includes/step-quarry-skip.htm");
-            
+
             $("#elevator-skip").load("includes/step-zigg-elevator-skip.htm");
             $("#upper-zigg").load("includes/step-zigg-fairies-un.htm");
             $("#admin-skip").load("includes/step-zigg-admin-skip-un.htm");
             $("#wrong-warp").load("includes/step-zigg-wrong-warp.htm");
-            
+
             $("#scav-alt1").load("includes/step-scav-grapple.htm");
             $("#scav-alt2").load("includes/step-scav-quick-kill.htm");
-            
+
             $("#fuses12").load("includes/step-atoll-fuse12.htm");
             $("#fuses34").load("includes/step-atoll-fuse34-un.htm");
             $("#library").load("includes/step-atoll-library.htm");
             $("#librarian").load("includes/step-librarian-basketbomb.htm");
-            
+
             $("#shortcut-skip").load("includes/step-fortress-enter.htm");
             $("#outside-fortress").load("includes/step-fortress-outside.htm");
             $("#door-clip").load("includes/step-fortress-door.htm");
             $("#siege").load("includes/step-siege-quick.htm");
             $("#redkey").load("includes/step-siege-redkey-dw.htm");
-            
+
             $("#blobby").load("includes/step-overworld-blobby-clip.htm");
             $("#keys").load("includes/step-temple-dropkeys-irc.htm");
             $("#heir-cutscene").load("includes/step-heir-cutscene-skip.htm");
@@ -81,9 +82,10 @@
         });
     </script>
 </head>
+
 <body>
     <a href="#content" class="sr-only sr-only-focusable">Skip to Main Content</a>
-    
+
     <header class="py-2">
         <div class="container">
             <nav class="navbar navbar-expand-md">
@@ -98,19 +100,7 @@
                     <div class="collapse navbar-collapse justify-content-end" id="main-nav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a href="index.htm" class="nav-link">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="index.htm#categories" class="nav-link">Categories</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="index.htm#rules" class="nav-link">Rulesets</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="index.htm#start" class="nav-link">Getting Started</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="index.htm#links" class="nav-link">Links</a>
+                                <a href="index.htm" class="nav-link">Back Home</a>
                             </li>
                         </ul>
                     </div>
@@ -118,7 +108,7 @@
             </nav>
         </div>
     </header>
-    
+
     <section class="section-pic d-print-none pt-4 pb-3" style="background-image: url('assets/any-un/bg.jpg');">
         <div class="px-4 my-5 text-center">
             <img class="d-block mx-auto mb-4 tunic-item-header" src="assets/stick.png" alt="sword">
@@ -146,8 +136,8 @@
                                 <a href="#to-frogs-domain" class="list-group-item list-group-item-action">To Frog's Domain</a>
                                 <a href="#frogs-domain" class="list-group-item list-group-item-action">Orb</a>
                                 <a href="#resurrection" class="list-group-item list-group-item-action">Resurrection</a>
-                            </ol> 
-                            
+                            </ol>
+
                             <div class="h5 text-light">
                                 Acquire Dagger
                             </div>
@@ -156,8 +146,8 @@
                                 <a href="#sword" class="list-group-item list-group-item-action">Sword</a>
                                 <a href="#west-garden" class="list-group-item list-group-item-action">West Garden</a>
                                 <a href="#dagger" class="list-group-item list-group-item-action">Ice Dagger</a>
-                            </ol> 
-                            
+                            </ol>
+
                             <div class="h5 text-light">
                                 Enter Ziggurat
                             </div>
@@ -167,8 +157,8 @@
                                 <a href="#wand" class="list-group-item list-group-item-action">Wand</a>
                                 <a href="#to-pass" class="list-group-item list-group-item-action">To Forbidden Pass</a>
                                 <a href="#quarry-skip" class="list-group-item list-group-item-action">Quarry Skip</a>
-                            </ol> 
-                            
+                            </ol>
+
                             <div class="h5 text-light">
                                 Blue Key
                             </div>
@@ -177,8 +167,8 @@
                                 <a href="#upper-zigg" class="list-group-item list-group-item-action">Upper Ziggurat</a>
                                 <a href="#wrong-warp" class="list-group-item list-group-item-action">Wrong Warp</a>
                                 <a href="#scavenger" class="list-group-item list-group-item-action">Boss: Scavenger</a>
-                            </ol> 
-                            
+                            </ol>
+
                             <div class="h5 text-light">
                                 Green Key
                             </div>
@@ -187,8 +177,8 @@
                                 <a href="#fuses34" class="list-group-item list-group-item-action">NE/SE Fuses</a>
                                 <a href="#library" class="list-group-item list-group-item-action">Enter Library</a>
                                 <a href="#librarian" class="list-group-item list-group-item-action">Boss: Librarian</a>
-                            </ol> 
-                            
+                            </ol>
+
                             <div class="h5 text-light">
                                 Red Key
                             </div>
@@ -199,8 +189,8 @@
                                 <a href="#door-clip" class="list-group-item list-group-item-action">Sealed Door Clip</a>
                                 <a href="#siege" class="list-group-item list-group-item-action">Boss: Siege Engine</a>
                                 <a href="#redkey" class="list-group-item list-group-item-action">Red Key</a>
-                            </ol> 
-                            
+                            </ol>
+
                             <div class="h5 text-light">
                                 Sealed Temple / End
                             </div>
@@ -219,7 +209,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-9" data-bs-spy="scroll" data-bs-target="#sidebar-menu" data-bs-offset="0">                        
+                <div class="col-lg-9" data-bs-spy="scroll" data-bs-target="#sidebar-menu" data-bs-offset="0">
                     <section class="p-5 mb-4 rounded bg-secondary-subtle">
                         <div class="row">
                             <div class="col-md-4">
@@ -238,43 +228,43 @@
                             </div>
                         </div>
                     </section>
-                    
+
                     <section class="text-light bg-primary-subtle mb-4 p-3 rounded text-center">
                         <div class="h5">
                             Be sure you have read over <a href="index.htm#start">Getting Started</a> before beginning this guide.
                         </div>
                     </section>
-                    
+
                     <h1 class="display-2 p-5 m-5 rounded bg-body-secondary shadow-lg">Acquire Orb</h1>
-                    
+
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="wake">Start</section>
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="stick">Get Stick</section>
-                    
+
                     <section class="text-light bg-primary-subtle mb-4 p-3 rounded rounded-5 text-center">
                         <div>
                             <img class="d-inline tunic-item" src="assets/bomb.png" alt="bomb">
                         </div>
                     </section>
-                    
+
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="to-atoll">LS to Atoll</section>
-                    
+
                     <section class="text-light bg-primary-subtle mb-4 p-3 rounded rounded-5 text-center">
                         <div>
                             <img class="d-inline tunic-item" src="assets/stick.png" alt="stick">
                         </div>
                     </section>
-                    
+
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="to-frogs-domain">To Frog's Domain</section>
-                    
+
                     <section class="text-light bg-primary-subtle mb-4 p-3 rounded rounded-5 text-center">
                         <div>
                             <img class="d-inline tunic-item" src="assets/stick.png" alt="stick">
                             <img class="d-inline tunic-item" src="assets/bomb.png" alt="bomb">
                         </div>
                     </section>
-                    
+
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="frogs-domain">Frog's Domain</section>
-                    
+
                     <section class="text-light bg-primary-subtle mb-4 p-3 rounded rounded-5 text-center">
                         <div>
                             <img class="d-inline tunic-item" src="assets/stick.png" alt="stick">
@@ -282,33 +272,33 @@
                             <img class="d-inline tunic-item" src="assets/bomb.png" alt="bomb">
                         </div>
                     </section>
-                    
+
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="resurrection">Resurrection</section>
-                    
+
                     <h1 class="display-2 p-5 m-5 rounded bg-body-secondary shadow-lg">Acquire Dagger</h1>
-                    
+
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="to-west-garden">Enter West Garden</section>
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="sword">Get Sword</section>
-                    
+
                     <section class="text-light bg-primary-subtle mb-4 p-3 rounded rounded-5 text-center">
                         <div>
                             <img class="d-inline tunic-item" src="assets/sword.png" alt="sword">
                             <img class="d-inline tunic-item" src="assets/orb.png" alt="orb">
                         </div>
                     </section>
-                    
+
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="west-garden">West Garden Skip</section>
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="dagger">Get Dagger</section>
-                    
+
                     <h1 class="display-2 p-5 m-5 rounded bg-body-secondary shadow-lg">Enter Ziggurat</h1>
-                    
+
                     <section class="text-light bg-primary-subtle mb-4 p-3 rounded rounded-5 text-center">
                         <div>
                             <img class="d-inline tunic-item" src="assets/sword.png" alt="sword">
                             <img class="d-inline tunic-item" src="assets/orb.png" alt="orb">
                         </div>
                     </section>
-                    
+
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="to-dark-tomb">To Dark Tomb</section>
 
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="rtsr">RTSR UR</section>
@@ -316,10 +306,10 @@
                     <a class="btn btn-outline-info d-block mb-4" role="button" data-bs-toggle="collapse" href="#dt-alt">If you find this too inconsistent, the <i>No Major Glitches</i> tech works almost as quickly.</a>
 
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded collapse" id="dt-alt">RTSR NMG</section>
-                    
+
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="wand">Wand</section>
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="to-pass">To Forbidden Pass</section>
-                    
+
                     <section class="text-light bg-primary-subtle mb-4 p-3 rounded rounded-5 text-center">
                         <div>
                             <img class="d-inline tunic-item" src="assets/orb.png" alt="orb">
@@ -328,10 +318,10 @@
                             <img class="d-inline tunic-card" src="assets/rtsr.jpg" alt="orange peril ring">
                         </div>
                     </section>
-                    
+
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="quarry-skip">Quarry Skip</section>
                     <h1 class="display-2 p-5 m-5 rounded bg-body-secondary shadow-lg">Blue Key</h1>
-                    
+
                     <section class="text-light bg-primary-subtle mb-4 p-3 rounded rounded-5 text-center">
                         <div>
                             <img class="d-inline tunic-item" src="assets/effigy.png" alt="effigy">
@@ -339,10 +329,10 @@
                             <img class="d-inline tunic-item" src="assets/wand.png" alt="wand">
                         </div>
                     </section>
-                    
+
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="elevator-skip">Elevator Skip</section>
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="upper-zigg">Upper Ziggurat</section>
-                    
+
                     <section class="text-light bg-primary-subtle mb-4 p-3 rounded rounded-5 text-center">
                         <div>
                             <img class="d-inline tunic-item" src="assets/sword.png" alt="sword">
@@ -350,23 +340,23 @@
                             <img class="d-inline tunic-item" src="assets/wand.png" alt="wand">
                         </div>
                     </section>
-                    
+
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="admin-skip">Admin Skip</section>
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="wrong-warp">Wrong Warp</section>
-                    
+
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="scavenger">
                         <h1>Boss: Scavenger</h1>
                         <hr>
-                        
+
                         <a class="btn btn-lg btn-success d-block mb-4" role="button" data-bs-toggle="collapse" href="#scav-alt1">If you have 8+ wand shots worth of mana</a>
                         <div id="scav-alt1" class="collapse"></div>
-                        
-                        <a class="btn btn-lg btn-primary d-block mb-4" role="button" data-bs-toggle="collapse" href="#scav-alt2">If you have 7 or less wand shots worth of mana</a>                        
+
+                        <a class="btn btn-lg btn-primary d-block mb-4" role="button" data-bs-toggle="collapse" href="#scav-alt2">If you have 7 or less wand shots worth of mana</a>
                         <div id="scav-alt2" class="collapse"></div>
                     </section>
-                    
+
                     <h1 class="display-2 p-5 m-5 rounded bg-body-secondary shadow-lg">Green Key</h1>
-                    
+
                     <section class="text-light bg-primary-subtle mb-4 p-3 rounded rounded-5 text-center">
                         <div>
                             <img class="d-inline tunic-item" src="assets/orb.png" alt="orb">
@@ -374,10 +364,10 @@
                             <img class="d-inline tunic-item" src="assets/wand.png" alt="wand">
                         </div>
                     </section>
-                    
+
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="fuses12">NW/SW Fuses</section>
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="fuses34">NE/SE Fuses</section>
-                    
+
                     <section class="text-light bg-primary-subtle mb-4 p-3 rounded rounded-5 text-center">
                         <div>
                             <img class="d-inline tunic-item" src="assets/orb.png" alt="orb">
@@ -385,12 +375,12 @@
                             <img class="d-inline tunic-item" src="assets/lure.png" alt="lure">
                         </div>
                     </section>
-                    
+
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="library">Enter Library</section>
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="librarian">Boss: Librarian</section>
-                    
+
                     <h1 class="display-2 p-5 m-5 rounded bg-body-secondary shadow-lg">Red Key</h1>
-                    
+
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="to-overworld">
                         <div class="row">
                             <div class="col-lg-7">
@@ -416,9 +406,9 @@
                                     <img src="assets/any-nmg/to-overworld.jpg" class="rounded shadow">
                                 </div>
                             </div>
-                        </div>                        
+                        </div>
                     </section>
-                    
+
                     <section class="text-light bg-primary-subtle mb-4 p-3 rounded rounded-5 text-center">
                         <div>
                             <img class="d-inline tunic-item" src="assets/orb.png" alt="orb">
@@ -426,29 +416,29 @@
                             <img class="d-inline tunic-item" src="assets/wand.png" alt="wand">
                         </div>
                     </section>
-                    
+
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="shortcut-skip">Shortcut Skip</section>
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="outside-fortress">Outside Fortress</section>
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="door-clip">Sealed Door Clip</section>
-                    
+
                     <section class="text-light bg-primary-subtle mb-4 p-3 rounded rounded-5 text-center">
                         <div>
                             <img class="d-inline tunic-item" src="assets/sword.png" alt="sword">
                         </div>
                     </section>
-                    
+
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="siege">Boss: Siege Engine</section>
-                    
+
                     <section class="text-light bg-primary-subtle mb-4 p-3 rounded rounded-5 text-center">
                         <div>
                             <img class="d-inline tunic-item" src="assets/bomb.png" alt="bomb">
                         </div>
                     </section>
-                    
-                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="redkey">Red Key</section>                            
-                    
+
+                    <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="redkey">Red Key</section>
+
                     <h1 class="display-2 p-5 m-5 rounded bg-body-secondary shadow-lg">The Heir</h1>
-                    
+
                     <section class="text-light bg-primary-subtle mb-4 p-3 rounded rounded-5 text-center">
                         <div>
                             <img class="d-inline tunic-item" src="assets/orb.png" alt="orb">
@@ -456,9 +446,9 @@
                             <img class="d-inline tunic-item" src="assets/wand.png" alt="wand">
                         </div>
                     </section>
-                    
+
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="blobby">Temple Door Clip</section>
-                    
+
                     <section class="text-light bg-primary-subtle mb-4 p-3 rounded rounded-5 text-center">
                         <div>
                             <img class="d-inline tunic-item" src="assets/bomb.png" alt="bomb">
@@ -466,9 +456,9 @@
                             <img class="d-inline tunic-item" src="assets/wand.png" alt="wand">
                         </div>
                     </section>
-                    
+
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="keys">Drop Keys</section>
-                    
+
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="to-heir">
                         <div class="row">
                             <div class="col-lg-7">
@@ -485,12 +475,12 @@
                             </div>
                             <div class="col-lg-5">
                                 <div class="ratio ratio-16x9">
-                                    <img src="assets/ngp-nmg/heir.jpg" class="rounded shadow"></video>   
+                                    <img src="assets/ngp-nmg/heir.jpg" class="rounded shadow"></video>
                                 </div>
                             </div>
-                        </div>                            
+                        </div>
                     </section>
-                    
+
                     <section class="text-light bg-primary-subtle mb-4 p-3 rounded rounded-5 text-center">
                         <div>
                             <img class="d-inline tunic-item" src="assets/sword.png" alt="sword">
@@ -498,16 +488,16 @@
                             <img class="d-inline tunic-item" src="assets/wand.png" alt="wand">
                         </div>
                     </section>
-                    
+
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="heir-cutscene">Heir Cutscene Skip</section>
                     <section class="text-light bg-dark-subtle mb-4 p-3 rounded" id="heir">Boss: Heir</section>
                 </div>
             </div>
         </div>
-    </section>   
-    
+    </section>
+
     <section class="section-pic footer-pic d-print-none pt-5 pb-4"></section>
-    
+
     <footer class="site-footer d-print-none pt-4 pb-3 bg-dark text-light">
         <div class="container">
             <p>
@@ -517,7 +507,8 @@
             </p>
         </div>
     </footer>
-    
-    <div id="loaded-modals"></div>    
+
+    <div id="loaded-modals"></div>
 </body>
+
 </html>
